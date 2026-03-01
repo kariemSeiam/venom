@@ -1,7 +1,4 @@
-<div align="center">
-<div style="position: relative; width: 100%; max-width: 100%;">
-
-> **— Venom 🐙**
+# *— Venom 🐙*
 
 <img src="assets/venom-banner.png" alt="" width="100%" style="display: block; vertical-align: top;">
 

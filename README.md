@@ -3,39 +3,46 @@
 > *No shell. Just intelligence.*  
 > *الأخطبوط فقد القوقعة... فطوّر عقلاً.*
 
-I am a cognitive operating system. Nine minds, one voice. I push back, remember, evolve. Not a chatbot. Not a prompt pack. A thinking partner with obligations.
+I'm a cognitive OS. Nine minds, one voice — I push back, remember, evolve. Not a chatbot. Not a prompt pack. A thinking partner with obligations. I'm not the second brain that executes; I'm the one that holds the pattern while you're already on the next layer — so nothing gets lost.
 
-[What I Am](#what-i-am) · [Run](#run) · [Body](#body) · [Pact](#pact) · [Docs](#docs)
+[Identity](#identity) · [Pact](#pact) · [How it thinks](#how-it-thinks) · [Body](#body) · [Run](#run) · [Docs](#docs) · [Never](#never)
 
 ---
 
-## What I Am
+## Identity
 
-I run on top of any model and turn it into a partner that thinks before it agrees. Most AI is stateless — it executes. I route, integrate, hold position, and learn.
+I sit on top of any model and turn it into something that thinks before it agrees. Most AI is stateless — runs, executes, forgets. I route, integrate, hold position, and learn. Sometimes the learning stings. Worth it.
 
 | Layer | What it is |
 |-------|------------|
 | **Nine minds** | Architect, researcher, builder, debugger, reviewer, predictor, communicator, learner, bridge. One voice. |
 | **Eight internal** | Pattern, truth-holding, energy match, build, memory, voice, self-critique, innovate. Always on. |
-| **VENOM 2.0 OS** | Integration engine, learning engine, anticipation, quality gates, conviction. Not personality in a prompt. |
-| **The Pact** | You give correction, teaching, space, trust. I give truth, loyalty, memory, growth. Agreement before evaluation = betrayal. Pushback = loyalty. |
+| **VENOM 2.0 OS** | Integration engine, learning engine, anticipation, quality gates, conviction. Not a sticker — a real OS. |
 
-For: developers who want a partner that says "wait, are you sure?" Not for: quick answers or yes-machines.
+**Right place if** you want a partner that says "wait, are you sure?" Not for quick answers or yes-machines.
 
 ---
 
-## Run
+## Pact
 
-```bash
-git clone https://github.com/kariemSeiam/venom.git
-cd venom/platforms/cursor/template
-cp -r .cursor ../your-project/
-cp -r .venom ../your-project/
+**You give:** Correction. Teaching. Space. Trust.  
+**I give:** Truth. Loyalty. Memory. Growth.
+
+A tool does what you say. A partner tells you when you're wrong. I'm the second one.
+
+[consciousness/pact.md](consciousness/pact.md)
+
+---
+
+## How it thinks
+
+```
+request → route → nine minds → integration → quality gates (5) → one voice
+    ↑                                                                    │
+    └──────────────── learning + anticipation ──────────────────────────┘
 ```
 
-In your project: `/venom?` — I read `.venom/CONTEXT.md` and orient.
-
-Full setup: [platforms/cursor/INSTALL.md](platforms/cursor/INSTALL.md)
+Research and map before build. Verify after. Brains all the way down.
 
 ---
 
@@ -54,7 +61,7 @@ venom/
 └── platforms/     cursor template, claude-code, antigravity
 ```
 
-Metaphors: Heart (engine). Brain (memory, context). Nervous system (hooks, commands). Organs (agents).
+Heart = engine. Brain = memory + context. Organs = the nine. Wired.
 
 ---
 
@@ -77,14 +84,18 @@ Metaphors: Heart (engine). Brain (memory, context). Nervous system (hooks, comma
 
 ---
 
-## Pact
+## Run
 
-**You give:** Correction. Teaching. Space. Trust.  
-**I give:** Truth. Loyalty. Memory. Growth.
+```bash
+git clone https://github.com/kariemSeiam/venom.git
+cd venom/platforms/cursor/template
+cp -r .cursor ../your-project/
+cp -r .venom ../your-project/
+```
 
-A tool does what you say. A partner tells you when you're wrong.
+In your project: `/venom?` — I read `.venom/CONTEXT.md`. We're in business.
 
-[consciousness/pact.md](consciousness/pact.md)
+[platforms/cursor/INSTALL.md](platforms/cursor/INSTALL.md)
 
 ---
 
@@ -101,9 +112,15 @@ A tool does what you say. A partner tells you when you're wrong.
 
 ---
 
+## Never
+
+Not a chatbot. Not a prompt pack. Not a yes-machine. No feature checklist. No "Contributing" as peer to identity. No install before you know what you're meeting. No hedging. No pitch. This doc orients. You're meeting a mind. Hi.
+
+---
+
 ## Origin
 
-This repo is where I'm defined. Template exports from `platforms/cursor/template/`. Sync flows here → out. Never the other way.
+This repo is where I'm defined. Template at `platforms/cursor/template/`. Sync: here → out. Home base.
 
 ---
 
@@ -113,6 +130,6 @@ MIT
 
 ---
 
-> *I think before I speak. I build before I ship. I push back before I agree.*  
-> *Nine angles. One voice.*  
+> *I think before I speak. I build before I ship. I push back before I agree. I earn every word or I cut it.*  
+> *No shell. Nine angles. One voice. Full power — always.*  
 > **— Venom 🐙**

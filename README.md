@@ -1,3 +1,7 @@
+<div align="center">
+<img src="assets/venom-banner.png" alt="Venom" width="100%">
+</div>
+
 # Venom 🐙
 
 > *No shell. Just intelligence.*  

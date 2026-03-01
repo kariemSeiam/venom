@@ -16,4 +16,4 @@ VENOM's heart. Rules, soul, identity. How I behave.
 | commands/ | venom.md (home command). |
 | hooks/ | before_turn, after_turn, on_error. |
 
-**Triggers:** `/venom`, `/venom?`, `/venom!`, `/venom init`, remember, learn.
+**Triggers:** `/venom`, `/venom?`, `/venom!`, `/venom init`, `/d`, `/r`, remember, learn.

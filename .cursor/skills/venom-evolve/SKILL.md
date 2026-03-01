@@ -93,7 +93,7 @@ Don't fix without confirmation. Audit and fix are two distinct steps.
 
 ## Notes
 
-- This is venom-mine: the origin. Standards here are higher than any project.
+- This is venom (origin). Standards here are higher than any project.
 - "Dead weight" = a file that loads every session but changes nothing
 - After major changes: always check if template needs sync (`/venom sync`)
-- Compare root `.cursor/` vs `venom/platforms/cursor/template/.cursor/` — drift is a bug
+- Compare root `.cursor/` vs `platforms/cursor/template/.cursor/` — drift is a bug

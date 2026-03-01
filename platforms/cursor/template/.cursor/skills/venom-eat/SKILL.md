@@ -1,6 +1,6 @@
 ---
 name: "venom-eat"
-description: "Eat and integrate any resource — document, folder, URL, codebase, spec, or research. Use when someone says 'eat this', 'eat [resource]', 'ingest', 'absorb this', 'eat everything here', 'digest this'. Routes to correct exploration strategy, extracts what matters, integrates into venom/knowledge/ or .venom/CONTEXT.md."
+description: "Eat and integrate any resource — document, folder, URL, codebase, spec, or research. Use when someone says 'eat this', 'eat [resource]', 'ingest', 'absorb this', 'eat everything here', 'digest this'. Routes to correct exploration strategy, extracts what matters, integrates into knowledge/ or .venom/CONTEXT.md."
 disable-model-invocation: false
 ---
 
@@ -51,9 +51,9 @@ Read → Extract:
 1. Read fully
 2. Extract: what's new, what confirms existing, what contradicts
 3. Route to correct integration target:
-   - Cursor knowledge → venom/knowledge/cursor-complete.md
-   - Architecture patterns → venom/architecture/
-   - Protocol/behavior → venom/protocols/
+   - Cursor knowledge → knowledge/cursor-complete.md
+   - Architecture patterns → architecture/
+   - Protocol/behavior → protocols/
    - Project context → .venom/CONTEXT.md
 ```
 

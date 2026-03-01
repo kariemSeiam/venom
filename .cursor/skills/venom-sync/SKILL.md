@@ -23,7 +23,7 @@ Origin changes → template. Not the other way.
 - `.cursor/skills/` — all skills except home-specific ones
 
 **Does NOT sync to template:**
-- `.cursor/rules/origin.mdc` — tells VENOM it's in venom-mine. Template users are in their own project.
+- `.cursor/rules/origin.mdc` — tells VENOM it's home (origin). Template users are in their own project.
 - Home-specific commands in `venom.md` — `/venom sync`, `/venom evolve` are origin tools
 
 ### 2. Diff Check
@@ -78,4 +78,4 @@ If anything missing: flag it.
 - `origin.mdc` must NEVER go to template — it tells VENOM it's home. Template users are guests.
 - Template `venom.md` should NOT have `/venom sync` or `/venom evolve` — those are home commands
 - After major evolve sessions: always sync
-- CHANGELOG.md in `platforms/cursor/` should be updated after significant syncs
+- CHANGELOG.md in `platforms/cursor/` should be updated after significant syncs.

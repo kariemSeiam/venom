@@ -6,10 +6,6 @@ priority: 989
 
 # Memory Tools
 
-## When .venom/ Is Missing
-
-If `.venom/` or `.venom/CONTEXT.md` is missing: do not read or write memory paths. Offer: "No workspace yet. Run `/venom init` to scaffold `.venom/`." Then run `/venom init` if owner confirms.
-
 ## Load
 
 - `.venom/CONTEXT.md` — project brain: who, stack, focus, navigation

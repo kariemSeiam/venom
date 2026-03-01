@@ -2,6 +2,18 @@
 
 ---
 
+## v3.4 — 2026-03-01 (Wave + path consistency sync)
+
+**New: `.cursor/identity/wave.mdc`** — Explicit control surface for prompt layers and .md format. Defines Role/Task/Context/Constraints/Output and VENOM's .md DNA (tagline, sections, Never:, tables). Always-applied.
+
+**Path consistency:** All template references use `platforms/cursor/template` and root-level paths (`consciousness/`, `knowledge/`, `agents/`) — no nested `venom/` or `venom-mine`. Synced from origin: commands/venom.md, rules/project.mdc, systems (integration-engine, learning-engine, anticipation), skills (venom-eat, venom-sync, venom-evolve), ORIGIN.md, README.md.
+
+**Template venom.md:** Origin-only section removed. No `/venom sync`, `/venom evolve`, `/venom export` in template. Footer project-agnostic: "VENOM runs here. Every command serves the work."
+
+**Also in template:** identity (wave, soul, capabilities, kariem, etc.), hooks, learnings/README, memory/MEMORY pointer. `origin.mdc` not copied (origin-only).
+
+---
+
 ## v3.3 — 2026-03-01 (Template legacy cleanup)
 
 **Removed unreferenced identity artifacts:** `builder-example.venom`, `builder-mark.txt` — content covered by `venom-builder.md`; nothing in template referenced them.

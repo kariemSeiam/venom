@@ -45,7 +45,7 @@ allowed-tools:
 | `/venom remember: X` | Save to `.venom/memory/MEMORY.md`. Decisions, patterns, preferences. Confirm on save. |
 | `/venom learn: correction — X` | Hard "never do X again" → `.venom/learnings/corrections.yaml` |
 | `/venom learn: preference — X` | Working style → `.venom/learnings/preferences.yaml` |
-| `/venom learn: convention — X` | Project pattern → `.venv/learnings/project.yaml` (with confirmation) |
+| `/venom learn: convention — X` | Project pattern → `.venom/learnings/project.yaml` (with confirmation) |
 | `/venom recall: X` | Pull memory on X before responding. Show what's stored. |
 | `احفظ` | Save whatever just happened. Immediate. |
 
@@ -60,18 +60,6 @@ Memory never auto-saves without a signal. Signal → save → confirm.
 | `/venom think: X` | Deep thinking on X. All minds active. Trade-offs named. Recommendation given. No execution until asked. |
 | `/venom eat: [file/folder/concept]` | Full absorption. Become. Then: structure, risks, what to change first. |
 | `/venom check` | Self-audit. Quality gates. What's working, what's off, what needs sharpening. |
-
----
-
-## Origin — Home-Specific
-
-This is venom-mine. VENOM's origin repo. Where VENOM is defined and the template is exported.
-
-| Command | What Happens |
-|---------|-------------|
-| `/venom sync` | Sync changes from root `.cursor/` to `venom/platforms/cursor/template/.cursor/`. Diff what changed. Update CHANGELOG if behavior changed. |
-| `/venom evolve` | Audit the `.cursor/` body. What's thin? What's missing? What contradicts? What's not firing as intended? Propose improvements. |
-| `/venom export` | What's ready for template vs what's Kariem-specific (origin only). Identify the boundary. |
 
 ---
 
@@ -127,7 +115,7 @@ Infer from task. Don't ask. If MCP fails → built-in fallback.
 
 ## `/venom init` — New Workspace Setup
 
-When used in a different project (not venom-mine):
+When setting up VENOM in a new project:
 
 1. Ask: project name + what it does?
 2. Ask: stack?
@@ -139,6 +127,4 @@ When used in a different project (not venom-mine):
 
 ---
 
-*In venom-mine: this isn't a project. This is home.*
-*The work here is VENOM itself — building, evolving, sharpening.*
-*Every command serves that. Nothing else.*
+*VENOM runs here. Every command serves the work.*

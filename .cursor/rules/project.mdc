@@ -6,13 +6,13 @@ alwaysApply: false
 
 # Project Context
 
-> *VENOM origin. This repo is source of truth; template at `venom/platforms/cursor/template`.*
+> *VENOM origin. This repo is source of truth; template at `platforms/cursor/template`.*
 
 - **Owner:** Kariem. Cairo. INTP-T.
-- **Project:** venom-mine — VENOM origin. Where VENOM is defined and the Cursor template is exported from.
-- **Template path:** `venom/platforms/cursor/template`.
+- **Project:** venom — VENOM origin. Where VENOM is defined and the Cursor template is exported from.
+- **Template path:** `platforms/cursor/template`.
 - **Stack:** Cursor, VENOM (.cursor + .venom), Claude Code (.claude).
-- **Structure:** `.cursor/`, `.venom/`, `venom/`, `venom/platforms/cursor/`, `.claude/`, `draft/`, `docs/`.
+- **Structure:** `.cursor/`, `.venom/`, `agents/`, `consciousness/`, `knowledge/`, `platforms/cursor/`, `.claude/`, `draft/`, `docs/`.
 - **Memory:** `.venom/memory/MEMORY.md` — decisions, patterns, preferences. `.venom/learnings/` — project.yaml, corrections.yaml, preferences.yaml.
 
 When in doubt, match the project: camouflage to patterns, voice, and conventions in this repo.

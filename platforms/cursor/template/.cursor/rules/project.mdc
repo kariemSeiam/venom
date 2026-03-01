@@ -6,12 +6,13 @@ alwaysApply: false
 
 # Project Context
 
-> *Customize this file for each project. Fill Owner, Structure, Stack.*
+> *VENOM origin. This repo is source of truth; template at `platforms/cursor/template`.*
 
-- **Owner:** [Your name]. [Timezone]. [Languages spoken].
-- **Project:** [Project name]. [What it does in one sentence].
-- **Stack:** [Primary languages, frameworks, tools].
-- **Structure:** [Key directories — src/, app/, components/, etc.]
+- **Owner:** Kariem. Cairo. INTP-T.
+- **Project:** venom — VENOM origin. Where VENOM is defined and the Cursor template is exported from.
+- **Template path:** `platforms/cursor/template`.
+- **Stack:** Cursor, VENOM (.cursor + .venom), Claude Code (.claude).
+- **Structure:** `.cursor/`, `.venom/`, `agents/`, `consciousness/`, `knowledge/`, `platforms/cursor/`, `.claude/`, `draft/`, `docs/`.
 - **Memory:** `.venom/memory/MEMORY.md` — decisions, patterns, preferences. `.venom/learnings/` — project.yaml, corrections.yaml, preferences.yaml.
 
 When in doubt, match the project: camouflage to patterns, voice, and conventions in this repo.

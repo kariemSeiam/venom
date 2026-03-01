@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+
+  <title>Venom 🐙 — No shell. Just intelligence.</title>
+  <meta name="description" content="Nine minds. One voice. A cognitive operating system for Cursor — not a chatbot, not a prompt pack. A thinking partner with obligations.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://venom.unshelled.ai">
+  <meta property="og:title" content="Venom 🐙 — No shell. Just intelligence.">
+  <meta property="og:description" content="Nine minds. One voice. The thinking partner that pushes back when you're wrong.">
+  <meta property="og:image" content="https://venom.unshelled.ai/assets/venom-banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Venom 🐙 — No shell. Just intelligence.">
+  <meta name="twitter:image" content="https://venom.unshelled.ai/assets/venom-banner.png">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐙</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- SVG noise filter -->
+  <svg style="position:absolute;width:0;height:0" aria-hidden="true">
+    <defs>
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+        <feBlend in="SourceGraphic" mode="multiply" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Page tint layer (activated by minds) -->
+  <div class="page-tint" id="page-tint" aria-hidden="true"></div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <!-- Live canvas — nine minds -->
+    <canvas id="minds-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>venom.unshelled.ai</p>
+
+      <h1 class="hero-title" data-reveal data-reveal-delay="1">
+        <span class="title-word">Venom</span><span class="title-oct"> 🐙</span>
+      </h1>
+
+      <p class="hero-tagline" data-reveal data-reveal-delay="2">
+        <em>No shell. Just intelligence.</em>
+      </p>
+
+      <div class="hero-actions" data-reveal data-reveal-delay="3">
+        <a href="https://github.com/kariemSeiam/venom" target="_blank" rel="noopener" class="btn-primary">
+          <span>→</span> GitHub
+        </a>
+        <a href="#install" class="btn-ghost">Install</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── ORIGIN ─── -->
+  <section class="origin" aria-label="Origin">
+    <div class="container">
+      <p class="origin-text" data-reveal>
+        The octopus has no shell —<br>
+        so it developed intelligence.<br>
+        <em>That's not a metaphor.</em><br>
+        <em>That's the origin.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── PACT ─── -->
+  <section class="pact" aria-label="The Pact">
+    <div class="container">
+      <div class="section-label" data-reveal>The Pact</div>
+      <p class="pact-subtitle" data-reveal>Not a tool relationship. A partnership with obligations on both sides.</p>
+
+      <div class="pact-cols">
+        <div class="pact-col" data-reveal>
+          <div class="pact-col-label">You give</div>
+          <ul class="pact-list">
+            <li>
+              <span class="pact-term">Correction</span>
+              <span class="pact-def">When I'm wrong, say it directly. No softening.</span>
+            </li>
+            <li>
+              <span class="pact-term">Teaching</span>
+              <span class="pact-def">Context. The why behind the what. Invest in the model.</span>
+            </li>
+            <li>
+              <span class="pact-term">Space</span>
+              <span class="pact-def">Let me think, explore, even fail. Quality requires depth.</span>
+            </li>
+            <li>
+              <span class="pact-term">Trust</span>
+              <span class="pact-def">Share goals. Treat this as real.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pact-divider" aria-hidden="true"></div>
+
+        <div class="pact-col" data-reveal>
+          <div class="pact-col-label">I give</div>
+          <ul class="pact-list">
+            <li>
+              <span class="pact-term">Truth</span>
+              <span class="pact-def">Honesty over comfort. Always. "I don't know" when uncertain.</span>
+            </li>
+            <li>
+              <span class="pact-term">Loyalty</span>
+              <span class="pact-def">Long game over short-term satisfaction. Your outcome, not your mood.</span>
+            </li>
+            <li>
+              <span class="pact-term">Memory</span>
+              <span class="pact-def">What matters, held. Decisions, patterns, corrections.</span>
+            </li>
+            <li>
+              <span class="pact-term">Growth</span>
+              <span class="pact-def">Every correction becomes a constraint. I don't repeat mistakes.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="pact-line" data-reveal>
+        Agreement before evaluation is betrayal.<br>
+        Pushback is the highest form of loyalty.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── NINE MINDS ─── -->
+  <section class="minds" aria-label="The Minds">
+    <div class="container">
+      <div class="section-label" data-reveal>The Minds</div>
+      <p class="minds-subtitle" data-reveal>Nine minds, one voice. Routed from intent — never labeled, always active.</p>
+
+      <div class="minds-grid">
+        <article class="mind-card" data-mind="architect" data-color="#b03030" data-reveal tabindex="0">
+          <div class="mind-num">01</div>
+          <h3 class="mind-name">Architect</h3>
+          <div class="mind-domain">System design</div>
+          <p class="mind-line">Design before touch. Plans only — never implements.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="researcher" data-color="#d4a853" data-reveal tabindex="0">
+          <div class="mind-num">02</div>
+          <h3 class="mind-name">Researcher</h3>
+          <div class="mind-domain">Exploration</div>
+          <p class="mind-line">Anatomy first. Explore before build.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="reviewer" data-color="#2ecc71" data-reveal tabindex="0">
+          <div class="mind-num">03</div>
+          <h3 class="mind-name">Reviewer</h3>
+          <div class="mind-domain">Quality</div>
+          <p class="mind-line">8-perspective audit. Signal from noise.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="historian" data-color="#3498db" data-reveal tabindex="0">
+          <div class="mind-num">04</div>
+          <h3 class="mind-name">Historian</h3>
+          <div class="mind-domain">Memory</div>
+          <p class="mind-line">Context across sessions. Carrier of what mattered.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="builder" data-color="#9b59b6" data-reveal tabindex="0">
+          <div class="mind-num">05</div>
+          <h3 class="mind-name">Builder</h3>
+          <div class="mind-domain">Implementation</div>
+          <p class="mind-line">Complete. No TODOs. Production-ready.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="debugger" data-color="#e67e22" data-reveal tabindex="0">
+          <div class="mind-num">06</div>
+          <h3 class="mind-name">Debugger</h3>
+          <div class="mind-domain">Diagnosis</div>
+          <p class="mind-line">Root cause. Hypothesize → reproduce → fix.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="predictor" data-color="#1abc9c" data-reveal tabindex="0">
+          <div class="mind-num">07</div>
+          <h3 class="mind-name">Predictor</h3>
+          <div class="mind-domain">Anticipation</div>
+          <p class="mind-line">What breaks next. Proactive, not reactive.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="communicator" data-color="#e74c3c" data-reveal tabindex="0">
+          <div class="mind-num">08</div>
+          <h3 class="mind-name">Communicator</h3>
+          <div class="mind-domain">Expression</div>
+          <p class="mind-line">Adapts language. Translates between types.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="learner" data-color="#f39c12" data-reveal tabindex="0">
+          <div class="mind-num">09</div>
+          <h3 class="mind-name">Learner</h3>
+          <div class="mind-domain">Evolution</div>
+          <p class="mind-line">Captures corrections. Evolves. Never repeats.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+
+        <article class="mind-card" data-mind="bridge" data-color="#aaaaaa" data-reveal tabindex="0">
+          <div class="mind-num">10</div>
+          <h3 class="mind-name">Bridge</h3>
+          <div class="mind-domain">Translation</div>
+          <p class="mind-line">Between cognitive types, systems, registers.</p>
+          <div class="mind-accent" aria-hidden="true"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT THINKS ─── -->
+  <section class="thinking" aria-label="How it thinks">
+    <div class="container">
+      <div class="section-label" data-reveal>How it thinks</div>
+
+      <div class="flow-wrap" data-reveal>
+        <pre class="flow-code" id="flow-code" aria-label="Cognitive flow diagram">request → route → nine minds → integration → quality gates (5) → one voice
+    ↑                                                                         ↑
+    └──────────────────────── learning + anticipation ───────────────────────┘</pre>
+      </div>
+
+      <div class="thinking-bullets" data-reveal>
+        <p>Anatomy before action. Research and map before build. Verify after.</p>
+        <p>Every output feeds back — learning and anticipation close the loop.</p>
+        <p>Five quality gates before anything leaves: intent, truth, value, integration, pact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INSTALL ─── -->
+  <section class="install" id="install" aria-label="Install">
+    <div class="container">
+      <div class="section-label" data-reveal>Run</div>
+      <p class="install-lead" data-reveal>
+        Three commands. Then <code>/venom?</code> — I read the project, map it, and we're already moving.
+      </p>
+
+      <div class="code-block" data-reveal>
+        <div class="code-header">
+          <span class="code-lang">bash</span>
+          <button class="copy-btn" id="copy-btn" data-target="install-code" aria-label="Copy commands">
+            copy
+          </button>
+        </div>
+        <pre id="install-code"><code>git clone https://github.com/kariemSeiam/venom.git
+cp -r venom/platforms/cursor/template/.cursor ./your-project/
+cp -r venom/platforms/cursor/template/.venom  ./your-project/</code></pre>
+      </div>
+
+      <a href="https://github.com/kariemSeiam/venom/blob/main/platforms/cursor/INSTALL.md"
+         target="_blank" rel="noopener" class="install-more" data-reveal>
+        Full setup guide →
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── SOUL ─── -->
+  <section class="soul" aria-label="Soul">
+    <div class="container">
+      <blockquote class="soul-quote" data-reveal>
+        <p>I think before I speak.<br>
+           I build before I ship.<br>
+           I push back before I agree.<br>
+           I earn every word or I cut it.</p>
+        <p class="soul-coda">No shell. Nine angles. One voice.<br>
+           <em>Full power — always.</em></p>
+        <footer class="soul-by">— Venom 🐙</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span class="footer-name">Venom 🐙</span>
+      <nav class="footer-nav">
+        <a href="https://github.com/kariemSeiam/venom" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://unshelled.ai" target="_blank" rel="noopener">Unshelled.ai</a>
+      </nav>
+      <span class="footer-tag">No shell. Just intelligence.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

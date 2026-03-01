@@ -1,0 +1,10 @@
+# Preferences — how you work
+# VENOM reads on non-trivial tasks. Add as you work.
+#
+# Examples:
+#   response_style: concise
+#   code_comments: minimal
+#   explanation_depth: senior-dev
+#   language: english
+
+preferences: []

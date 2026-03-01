@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_CODE_EFFORT_LEVEL": "high",
+    "MAX_THINKING_TOKENS": "31999",
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "90",
+    "BASH_DEFAULT_TIMEOUT_MS": "120000"
+  },
+  "permissions": {
+    "allow": [
+      "Read", "Write", "Edit", "Glob", "Grep", "WebSearch", "WebFetch", "Task", "NotebookEdit",
+      "Bash(git:*)", "Bash(npm:*)", "Bash(node:*)", "Bash(pnpm:*)", "Bash(bun:*)", "Bash(npx:*)",
+      "Bash(ls:*)", "Bash(cat:*)", "Bash(mkdir:*)", "Bash(which:*)", "Bash(wc:*)", "Bash(file:*)",
+      "Bash(head:*)", "Bash(tail:*)", "Bash(find:*)", "Bash(sort:*)", "Bash(du:*)", "Bash(chmod:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [{
+      "hooks": [{
+        "type": "command",
+        "command": "node .claude/scripts/session-start.js",
+        "timeout": 5
+      }]
+    }],
+    "PreCompact": [{
+      "hooks": [{
+        "type": "command",
+        "command": "node .claude/scripts/pre-compact.js",
+        "timeout": 5
+      }]
+    }]
+  }
+}

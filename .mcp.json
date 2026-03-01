@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "zai": {
+      "command": "node",
+      "args": ["/mnt/c/Users/karie/Desktop/v1/.zai-mcp/dist/index.js"],
+      "env": {
+        "ZAI_API_KEY": "a84655e15571457a84cd50f1744d98bf.Cq0i7NGPtdwj1ciN"
+      }
+    }
+  }
+}

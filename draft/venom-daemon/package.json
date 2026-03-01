@@ -1,0 +1,29 @@
+{
+  "name": "venom-daemon",
+  "version": "1.0.0",
+  "description": "VENOM — Always-On Background Brain. Nine minds, distributed cognition, no shell.",
+  "main": "core/daemon.js",
+  "type": "module",
+  "scripts": {
+    "start": "node core/daemon.js",
+    "dev": "node --watch core/daemon.js",
+    "install:global": "npm link",
+    "status": "node core/status.js"
+  },
+  "bin": {
+    "venom-daemon": "./core/daemon.js"
+  },
+  "keywords": [
+    "venom",
+    "daemon",
+    "ai-companion",
+    "background-process",
+    "cognitive-framework"
+  ],
+  "author": "Kariem Seiam + VENOM",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^4.0.1",
+    "node-cron": "^3.0.3"
+  }
+}

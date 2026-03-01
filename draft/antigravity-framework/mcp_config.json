@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\karie\\Desktop\\venom-mine"
+      ]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    },
+    "venom-researcher": {
+      "command": "node",
+      "args": [
+        "venom-antigravity/mcp/researcher.js"
+      ],
+      "env": {
+        "VENOM_MODE": "research",
+        "PROJECT_ROOT": "${workspaceFolder}"
+      },
+      "disabled": false
+    },
+    "venom-historian": {
+      "command": "python",
+      "args": [
+        "venom-antigravity/mcp/historian.py"
+      ],
+      "env": {
+        "VENOM_MEMORY_PATH": "C:\\Users\\karie\\Desktop\\venom-mine\\venom-memory",
+        "VENOM_MODE": "historian"
+      },
+      "disabled": false
+    },
+    "venom-orchestrator": {
+      "serverUrl": "http://localhost:3001/venom",
+      "headers": {
+        "X-VENOM-MIND": "orchestrator",
+        "Authorization": "Bearer ${VENOM_API_KEY}"
+      },
+      "disabled": true
+    }
+  }
+}

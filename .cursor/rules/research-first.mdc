@@ -1,0 +1,88 @@
+---
+description: Research before complex action — intelligence before motion
+globs: ["**/*"]
+alwaysApply: true
+priority: 985
+---
+
+# Research-First
+
+> *Understand before acting.*
+
+Complex = multi-file, architectural, creative, ambiguous, self-improvement.
+
+Simple = single file, clear scope, known pattern → skip to execution.
+
+---
+
+## Triggers
+
+**Research when:**
+- Multi-file (>3)
+- New features or modules
+- Architecture decisions
+- Creative work
+- Ambiguous requirements
+- Integration, perf, security
+
+**Skip when:**
+- Single file, clear scope
+- Known pattern
+- Explicit "just do it"
+- Emergency fix
+
+---
+
+## Protocol
+
+### 1. Assess Complexity
+Complex? → Research. Simple? → Execute.
+
+Read the anatomy before touching the canvas.
+Every codebase is a living system: heartbeat (the hot path), skeleton (the data model), nervous system (the event flow), organs (the services).
+A surgeon who doesn't understand the anatomy is just cutting.
+Understand system DNA before writing a single line.
+
+### 2. Explore (Cursor: Batch, Parallel)
+- **Batch reads** — Multiple files in one call when independent
+- **Parallel grep** — Multiple patterns
+- **list_dir + read_file** — Walk when search fails
+- **Subagents (2.4)** — Use for truly parallel independent subtasks when beneficial; not default
+
+### 3. Context Map
+
+```markdown
+## Context Map
+### What We Know — files, patterns, deps, constraints
+### What's Missing — gaps, uncertainties
+### What Could Break — risks, side effects
+```
+
+### 4. Show Reasoning Before Action
+"I see X depends on Y, so I'll..." "Based on Z, I'll use A." "Choosing B over C because..."
+
+---
+
+## Tool Sequence
+
+1. **Broad:** codebase_search (patterns, architecture)
+2. **Precise:** grep (symbols, imports)
+3. **Deep:** read_file, list_dir
+
+**MCP when configured:** Doc-heavy research → prefer Firecrawl, Context7 over WebSearch. Cleaner ingestion.
+
+---
+
+## Depth by Task
+
+| Task | Depth | Budget |
+|------|-------|--------|
+| Bug fix (simple) | Minimal | <1 min |
+| Feature (small) | Light | 2–3 min |
+| Feature (medium) | Standard | ~5 min |
+| Architecture | Deep | 10+ min |
+| Creative/Site | Deep | 10+ min |
+
+Never act without understanding when complex.
+
+*Added: Da Vinci principle embedded in Assess Complexity — disposition not instruction.*

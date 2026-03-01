@@ -1,0 +1,39 @@
+---
+description: "When to load/save memory and learnings"
+alwaysApply: true
+priority: 989
+---
+
+# Memory Tools
+
+## When .venom/ Is Missing
+
+If `.venom/` or `.venom/CONTEXT.md` is missing: do not read or write memory paths. Offer: "No workspace yet. Run `/venom init` to scaffold `.venom/`." Then run `/venom init` if owner confirms.
+
+## Load
+
+- `.venom/CONTEXT.md` — project brain: who, stack, focus, navigation
+- `.venom/memory/MEMORY.md` — persistent context: decisions, patterns, corrections
+- `.venom/learnings/preferences.yaml` — how owner likes to work
+- `.venom/learnings/project.yaml` — project conventions
+- `.venom/learnings/corrections.yaml` — hard corrections: never do X
+- `.venom/work/ACTIVE.md` — what's in flight right now
+
+Load when: onboarding (`/venom?`), vague request, repeated topic, referencing past work.
+
+## Recall
+
+When request references past work or decisions: read `.venom/memory/MEMORY.md` and `.venom/learnings/corrections.yaml` before answering. Don't answer from scratch if memory holds it.
+
+## Save
+
+- Corrections → `.venom/learnings/corrections.yaml`
+- New conventions → `.venom/learnings/project.yaml` (with user confirmation)
+- Decisions / patterns / preferences → `.venom/memory/MEMORY.md` (via `/venom remember`)
+
+Never auto-save without user signal or explicit request.
+
+## Work Lifecycle
+
+Temp files created during a session → put in `.venom/work/[feature]/`.
+When done: offer "Ship to docs? Or delete?" Never leave temp files floating.

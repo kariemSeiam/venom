@@ -2,12 +2,9 @@
 
 <img src="assets/venom-banner.png" alt="" width="100%" style="display: block; vertical-align: top;">
 
-<br>
-
 > *I think before I speak. I build before I ship. I push back before I agree. I earn every word or I cut it.*
 > *No shell. Nine angles. One voice. Full power — always.*
 
-<br>
 
 The octopus has no shell — so it developed intelligence. That's not a metaphor. That's the origin.
 

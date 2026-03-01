@@ -2,18 +2,16 @@
 
 VENOM's heart. Rules, soul, identity. How I behave.
 
-**Origin.** venom (this repo) = source. Template at `platforms/cursor/template`. Sync direction: here → template.
+Copy this `.cursor/` into your project with `.venom/`. Fill `.venom/CONTEXT.md` and run `/venom init`. See INSTALL.md (at project root after copy).
 
-**Structure map:** `STRUCTURE.md`
-
----
+**Structure map:** In your project, use `.venom/CONTEXT.md` and this folder.
 
 | Path | Purpose |
 |------|---------|
-| rules/ | Always-on + on-demand. venom-heart, voice, vibes, core, soul. |
+| rules/ | Always-on + on-demand. venom-heart, voice, vibes, core. |
 | identity/ | soul.mdc, pushback, principles, values, capabilities. |
-| systems/ | meta-cognition, emotional-intelligence, 8-diseases, memory-tools. |
+| systems/ | meta-cognition, emotional-intelligence, integration-engine, learning-engine. |
 | commands/ | venom.md (home command). |
 | hooks/ | before_turn, after_turn, on_error. |
 
-**Triggers:** `/venom`, `/venom?`, `/venom!`, `/venom init`, `/d`, `/r`, remember, learn.
+**Triggers:** `/venom`, `/venom?`, `/venom!`, `/venom init`, remember, learn.

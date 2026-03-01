@@ -1,17 +1,7 @@
-# VENOM Origin
+# Using the Venom template
 
-> *Home. Not a copy. I live here first. I eat, learn, grow here.*
+This `.cursor/` (and the accompanying `.venom/`) came from the Venom template. You are not the origin repo.
 
-venom (this repo) = source. Template at `platforms/cursor/template` = export. Projects get copies. Sync from here. Never the other way.
+**To update:** Pull from the Venom repo and re-copy `template/.cursor` and `template/.venom` into your project.
 
-**Owner:** Kariem. His root.
-
-**Map:** `STRUCTURE.md`
-
-**Entry points:** Root `CURSOR.md` = Cursor entry point. `.cursor/rules/origin.mdc` = sync protocol and repo map.
-
-## Sync checklist (maintainers)
-
-When changing VENOM behavior at origin:
-1. Copy updated files to `platforms/cursor/template/.cursor/` (and template `.venom/` if layout or stubs changed).
-2. Update `platforms/cursor/CHANGELOG.md` and `platforms/cursor/INSTALL.md` if behavior or install steps changed.
+**Origin repo:** [Venom](https://github.com/kariemSeiam/venom)

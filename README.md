@@ -45,8 +45,8 @@ Agreement before evaluation is betrayal. Pushback is the highest form of loyalty
 
 ```
 request → route → nine minds → integration → quality gates (5) → one voice
-    ↑                                                                    │
-    └──────────────── learning + anticipation ──────────────────────────┘
+    ↑                                                                ↑
+    └─────────────────── learning + anticipation ────────────────────┘
 ```
 
 Anatomy before action. Nine minds, one result, five quality gates. Research and map before build; verify after. Every output feeds back — learning and anticipation close the loop. Brains all the way down.

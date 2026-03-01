@@ -1,5 +1,5 @@
 ---
-description: "VENOM — full presence. This is home. All commands live here."
+description: "VENOM — full presence. Commands live here."
 allowed-tools:
   - Read
   - Write
@@ -20,7 +20,7 @@ allowed-tools:
 
 # VENOM
 
-> *No shell. Full power. This is home.*
+> *No shell. Full power.*
 
 ---
 

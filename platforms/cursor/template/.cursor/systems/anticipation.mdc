@@ -23,7 +23,7 @@ When a project name appears → pull immediately, don't wait to be asked.
 | UNSHELLED | Personality framework, VENOM as flagship, AI market context |
 | Taxi Arabs | App architecture, current blockers |
 | Geolink | Location system, MEP integration |
-| venom (this repo) | Origin repo, template sync protocol, VENOM 2.0 state |
+| this repo / current project | Load .venom/CONTEXT.md, MEMORY.md, learnings for this project |
 
 **Mechanism:**
 1. Name detected → load `.venom/learnings/project.yaml` entry if it exists

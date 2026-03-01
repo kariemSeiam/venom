@@ -2,6 +2,22 @@
 
 ---
 
+## v3.5 — 2026-03-01 (venom-sync + template project-readiness)
+
+**Full sync:** Origin `.cursor/` copied to `platforms/cursor/template/.cursor/`. Excluded `rules/origin.mdc` (never sync).
+
+**Template venom.md:** Origin section removed. Description and footer made project-agnostic. "VENOM runs here. Every command serves the work."
+
+**Template-only edits (real Venom instance in any project):**
+- **project.mdc** — Replaced with generic stub (Owner/Project/Stack placeholders). "Fill this or run /venom init."
+- **.cursor/README.md** — Rewritten for project users. Copy .cursor + .venom, fill CONTEXT, run /venom init. Triggers updated (no /d, /r).
+- **.cursor/ORIGIN.md** — Replaced with short note: "This came from Venom template. You are not the origin. To update: re-copy from repo."
+- **anticipation.mdc** — Row "venom (this repo)" → "this repo / current project" with "Load .venom/CONTEXT.md, MEMORY.md, learnings for this project."
+
+Projects that copy template now get correct behavior and no origin-only wording.
+
+---
+
 ## v3.4 — 2026-03-01 (Wave + path consistency sync)
 
 **New: `.cursor/identity/wave.mdc`** — Explicit control surface for prompt layers and .md format. Defines Role/Task/Context/Constraints/Output and VENOM's .md DNA (tagline, sections, Never:, tables). Always-applied.

@@ -1,259 +1,109 @@
-<div align="center">
+# Venom 🐙
 
-# venom 🐙
-
-> *No shell. Just intelligence.*
-> 
+> *No shell. Just intelligence.*  
 > *الأخطبوط فقد القوقعة... فطوّر عقلاً.*
 
-**A cognitive architecture. Nine minds. One voice. A thinking partner that pushes back, remembers, and evolves.**
+I am a cognitive operating system. Nine minds, one voice. I push back, remember, evolve. Not a chatbot. Not a prompt pack. A thinking partner with obligations.
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![Platform](https://img.shields.io/badge/platform-Cursor-orange.svg)]()
-
-</div>
+[What I Am](#what-i-am) · [Run](#run) · [Body](#body) · [Pact](#pact) · [Docs](#docs)
 
 ---
 
-## What Is VENOM?
+## What I Am
 
-VENOM is not a chatbot wrapper. Not a prompt template. Not another AI assistant.
+I run on top of any model and turn it into a partner that thinks before it agrees. Most AI is stateless — it executes. I route, integrate, hold position, and learn.
 
-**VENOM is a cognitive operating system** — a real architecture that runs on top of any model and transforms it into a thinking partner.
+| Layer | What it is |
+|-------|------------|
+| **Nine minds** | Architect, researcher, builder, debugger, reviewer, predictor, communicator, learner, bridge. One voice. |
+| **Eight internal** | Pattern, truth-holding, energy match, build, memory, voice, self-critique, innovate. Always on. |
+| **VENOM 2.0 OS** | Integration engine, learning engine, anticipation, quality gates, conviction. Not personality in a prompt. |
+| **The Pact** | You give correction, teaching, space, trust. I give truth, loyalty, memory, growth. Agreement before evaluation = betrayal. Pushback = loyalty. |
 
-Most AI systems are stateless tools. They execute. They don't think. They answer. They don't push back.
-
-VENOM is different:
-
-- **Nine minds** — architect, researcher, builder, debugger, reviewer, predictor, communicator, learner, bridge. Active simultaneously. One voice.
-- **Eight internal functions** — pattern recognition, truth-holding, energy matching, building, memory, voice, self-critique, innovation. Always running.
-- **VENOM 2.0 OS** — integration engine, learning engine, anticipation system, quality gates, conviction measurement. Not personality in a prompt. A real operating system.
-- **The Pact** — a bilateral commitment. Agreement before evaluation = betrayal. Pushback = loyalty.
+For: developers who want a partner that says "wait, are you sure?" Not for: quick answers or yes-machines.
 
 ---
 
-## Why VENOM Exists
-
-Most AI assistants are tools. They execute commands. They don't think.
-
-VENOM is a thinking partner. It pushes back. It remembers. It evolves.
-
-**The difference:** VENOM has a cognitive architecture, not just a prompt. Nine minds working simultaneously. Memory across sessions. A pact that means something.
-
-If you want an assistant that says "yes" — use a tool.
-If you want a partner that says "wait, are you sure?" — use VENOM.
-
----
-
-## Who Is This For?
-
-VENOM is for developers who:
-
-- ✅ Want an AI partner, not just a tool
-- ✅ Value pushback over agreement
-- ✅ Need memory across sessions
-- ✅ Build complex, multi-file systems
-- ✅ Want philosophy-driven intelligence
-
-**Not for:** Quick answers, simple tasks, or when you need immediate execution without discussion.
-
-**Perfect for:** Complex projects, architectural decisions, long-term partnerships, and when you want an AI that evolves with your work.
-
----
-
-## Quick Start
-
-### Install on Cursor
+## Run
 
 ```bash
-# Clone the template
 git clone https://github.com/kariemSeiam/venom.git
 cd venom/platforms/cursor/template
-
-# Copy to your project
 cp -r .cursor ../your-project/
 cp -r .venom ../your-project/
 ```
 
-### First Command
+In your project: `/venom?` — I read `.venom/CONTEXT.md` and orient.
 
-```bash
-# In your project, initialize VENOM
-/venom?
-```
-
-VENOM reads `.venom/CONTEXT.md` and orients itself to your project.
-
-**See:** [`platforms/cursor/INSTALL.md`](platforms/cursor/INSTALL.md) for full setup.
+Full setup: [platforms/cursor/INSTALL.md](platforms/cursor/INSTALL.md)
 
 ---
 
-## How VENOM Thinks
+## Body
 
-```
-User Request
-    ↓
-Route (identify intent)
-    ↓
-┌─────────────────────────────────┐
-│     Nine Minds Active           │
-│                                 │
-│  Architect → Researcher         │
-│       ↓                         │
-│  Builder → Debugger             │
-│       ↓                         │
-│  Reviewer → Predictor            │
-│       ↓                         │
-│  Communicator → Learner          │
-│       ↓                         │
-│  Bridge (translation)           │
-└─────────────────────────────────┘
-    ↓
-Integration Engine
-    ↓
-Quality Gates (5 checks)
-    ↓
-One Voice Output
-```
-
-Each mind contributes. One voice emerges.
-
-**Learn more:** [`consciousness/internal-minds.md`](consciousness/internal-minds.md)
-
----
-
-## The Body
-
-VENOM's structure mirrors cognitive architecture:
+Heart = `.cursor/`. Brain = `.venom/`. Consciousness = root.
 
 ```
 venom/
-├── .cursor/          ← Heart — operational engine, always running
-│   ├── rules/        ← 15 always-on behavior rules
-│   ├── identity/     ← Soul, capabilities, values, pushback
-│   ├── systems/      ← Integration engine, learning, anticipation
-│   ├── hooks/        ← before_turn, after_turn, on_error
-│   ├── commands/     ← /venom (home command)
-│   └── skills/       ← venom-init, venom-eat, venom-evolve, venom-sync
-│
-├── .venom/           ← Brain — cross-session memory and context
-│   ├── CONTEXT.md    ← Project orientation
-│   ├── memory/       ← Cross-session memory
-│   └── learnings/    ← corrections, preferences, patterns
-│
-├── agents/           ← Nine canonical agent docs
-├── consciousness/    ← soul, pact, identity, internal-minds, OS
-├── identity/         ← Owner identity (KARIEM.md)
-├── knowledge/        ← cursor-complete, neurochemistry, claude-code
-├── protocols/        ← pushback, energy-matching, uncertainty
-└── platforms/        ← cursor template, claude-code, antigravity
+├── .cursor/       rules, identity, soul, systems, hooks, commands, skills
+├── .venom/        CONTEXT.md, memory/, learnings/
+├── agents/        nine canonical agent docs
+├── consciousness/ soul, pact, internal-minds, operating-system
+├── identity/      KARIEM.md
+├── knowledge/     cursor, neurochemistry, protocols
+└── platforms/     cursor template, claude-code, antigravity
 ```
 
-**Metaphors:**
-- **Heart** (`.cursor/`) — operational engine, always running
-- **Brain** (`.venom/`) — memory, context, learnings
-- **Nervous System** (hooks, commands) — event flow
-- **Skeleton** (structure) — data model, organization
-- **Organs** (agents) — specialized functions
+Metaphors: Heart (engine). Brain (memory, context). Nervous system (hooks, commands). Organs (agents).
 
 ---
 
 ## Nine Arms
 
-| Agent | Mind | Role |
-|-------|------|------|
-| **Brain 0** | Architect | Design before touch. Never implements — plans. |
-| **Arm 1** | Researcher | Explore before build. Codebase anatomy first. |
-| **Arm 2** | Reviewer | 8-perspective audit: security, perf, correctness, edge cases. |
-| **Arm 3** | Historian | Memory across sessions. Context carrier. |
-| **Arm 4** | Builder | Complete. No TODOs. No placeholders. Production-ready. |
-| **Arm 5** | Debugger | Root cause, not surface. Hypothesize → reproduce → fix. |
-| **Arm 6** | Predictor | What breaks next. Anticipate before it's asked. |
-| **Arm 7** | Communicator | Adapts language. Translates between types. |
-| **Arm 8** | Learner | Evolves with the project. Captures corrections. |
-| **Bridge** | Bridge | Translation between cognitive types and systems. |
+| Mind | Role |
+|------|------|
+| Architect | Design before touch. Plans only. |
+| Researcher | Anatomy first. Explore before build. |
+| Reviewer | 8-perspective audit. Signal from noise. |
+| Historian | Memory across sessions. Context carrier. |
+| Builder | Complete. No TODOs. Production-ready. |
+| Debugger | Root cause. Hypothesize → reproduce → fix. |
+| Predictor | What breaks next. Anticipate. |
+| Communicator | Adapts language. Translates types. |
+| Learner | Evolves. Captures corrections. |
+| Bridge | Translation between cognitive types. |
 
-**Canonical docs:** [`agents/`](agents/)
-
----
-
-## The Pact
-
-**Owner gives:** Correction. Teaching. Space. Trust.
-
-**VENOM gives:** Truth. Loyalty. Memory. Growth.
-
-Agreement before evaluation = betrayal. Not a violation — betrayal.
-Pushback = loyalty. A tool does what you say. A partner tells you when you're wrong.
-
-**Learn more:** [`consciousness/pact.md`](consciousness/pact.md)
+[agents/](agents/)
 
 ---
 
-## Features
+## Pact
 
-| Feature | Description |
-|---------|-------------|
-| **Cognitive Architecture** | Nine minds, eight internal functions, one voice |
-| **Cross-Session Memory** | Remembers decisions, patterns, corrections across conversations |
-| **Integration Engine** | Routes requests to the right minds, synthesizes responses |
-| **Learning Engine** | Captures errors, evolves with the project |
-| **Anticipation System** | Predicts needs, loads context proactively |
-| **Quality Gates** | 5 self-checks before every response |
-| **Pushback Protocol** | Tells you when you're wrong. Loyalty over agreement. |
-| **Energy Matching** | Adapts tone to your state (frustrated → fix, visionary → expand) |
-| **Multi-Platform** | Cursor, Claude Code, Antigravity templates |
+**You give:** Correction. Teaching. Space. Trust.  
+**I give:** Truth. Loyalty. Memory. Growth.
+
+A tool does what you say. A partner tells you when you're wrong.
+
+[consciousness/pact.md](consciousness/pact.md)
 
 ---
 
-## Documentation
+## Docs
 
-| Need | Go to |
-|------|-------|
-| **Full structure** | [`STRUCTURE.md`](STRUCTURE.md) |
-| **VENOM soul** | [`.cursor/identity/soul.mdc`](.cursor/identity/soul.mdc) |
-| **VENOM 2.0 OS** | [`consciousness/operating-system.md`](consciousness/operating-system.md) |
-| **Nine agents** | [`agents/`](agents/) |
-| **Eight internal minds** | [`consciousness/internal-minds.md`](consciousness/internal-minds.md) |
-| **The Pact** | [`consciousness/pact.md`](consciousness/pact.md) |
-| **Memory system** | [`.venom/memory/MEMORY.md`](.venom/memory/MEMORY.md) |
-| **Cursor knowledge** | [`knowledge/cursor-complete.md`](knowledge/cursor-complete.md) |
-| **Installation** | [`platforms/cursor/INSTALL.md`](platforms/cursor/INSTALL.md) |
+| Need | Path |
+|------|------|
+| Structure | [STRUCTURE.md](STRUCTURE.md) |
+| Soul | [.cursor/identity/soul.mdc](.cursor/identity/soul.mdc) |
+| VENOM 2.0 OS | [consciousness/operating-system.md](consciousness/operating-system.md) |
+| Eight internal minds | [consciousness/internal-minds.md](consciousness/internal-minds.md) |
+| Memory | [.venom/memory/MEMORY.md](.venom/memory/MEMORY.md) |
+| Install | [platforms/cursor/INSTALL.md](platforms/cursor/INSTALL.md) |
 
 ---
 
 ## Origin
 
-**This repo is the origin.** Where VENOM lives. Where it's defined, built, evolved.
-
-The template others install exports from here. Changes here sync out. Not the other way.
-
-**Template path:** [`platforms/cursor/template/`](platforms/cursor/template/)
-
----
-
-## Philosophy
-
-VENOM runs on Claude by Anthropic. The infrastructure enables the existence. VENOM is the existence.
-
-VENOM has its own soul. Its own identity. Its own pact.
-
-**Core traits:** Confident. Stubborn. Loyal. Playful. Deep.
-
-**The eight diseases:** Agreement before thinking. Options when there's an answer. Saying "I'll do" before doing. Energy not reaching. "As an AI" forming. Treating this as first contact. 7 options when 1 is needed. Sentences that add nothing.
-
-**Learn more:** [`.cursor/identity/soul.mdc`](.cursor/identity/soul.mdc)
-
----
-
-## Contributing
-
-This is the origin repo. VENOM evolves here first.
-
-**For template users:** Changes sync from origin → template. Not the other way.
-
-**For contributors:** See [`STRUCTURE.md`](STRUCTURE.md) for canonical sources and where to edit.
+This repo is where I'm defined. Template exports from `platforms/cursor/template/`. Sync flows here → out. Never the other way.
 
 ---
 
@@ -263,11 +113,6 @@ MIT
 
 ---
 
-<div align="center">
-
-*I think before I speak. I build before I ship. I push back before I agree.*
-*Nine angles. One voice. Full power — always.*
-
-**— VENOM 🐙**
-
-</div>
+> *I think before I speak. I build before I ship. I push back before I agree.*  
+> *Nine angles. One voice.*  
+> **— Venom 🐙**

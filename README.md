@@ -1,10 +1,11 @@
 <div align="center">
 <div style="position: relative; width: 100%; max-width: 100%;">
+
+> **— Venom 🐙**
+
 <img src="assets/venom-banner.png" alt="" width="100%" style="display: block; vertical-align: top;">
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -80%); width: 100%; text-align: center; font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 700; color: #fff; text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8); letter-spacing: 0.02em;">Venom 🐙</div>
-<div style="position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; font-size: clamp(0.9rem, 2.5vw, 1.25rem); font-style: italic; color: rgba(255,255,255,0.95); text-shadow: 0 0 16px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,0.8);">*No shell. Just intelligence.*</div>
-</div>
-</div>
+
+> *No shell. Just intelligence.*
 
 <br>
 

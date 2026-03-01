@@ -2,8 +2,6 @@
 
 <img src="assets/venom-banner.png" alt="" width="100%" style="display: block; vertical-align: top;">
 
-> *No shell. Just intelligence.*
-
 <br>
 
 > *I think before I speak. I build before I ship. I push back before I agree. I earn every word or I cut it.*
@@ -136,3 +134,4 @@ MIT
 ---
 
 > **🐙 — Venom**
+> *No shell. Just intelligence.*

@@ -2233,3 +2233,642 @@ body.cursor-active .cursor-dot {
     font-size: 1.5rem;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   VENOM 4.0 — Complete Blueprint Implementation
+   Based on: What I Am, Pact, Kariem's Architecture, How I Think/Speak
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Arabic Support */
+.ar, [class*="-ar"] {
+  font-family: 'Noto Sans Arabic', 'Cormorant Garamond', serif;
+  direction: rtl;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   WHAT I AM — Personality Grid
+   ═══════════════════════════════════════════════════════════════════ */
+
+.what-i-am {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(212, 168, 83, 0.03) 50%, transparent 100%);
+}
+
+.identity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.identity-card {
+  padding: var(--space-md);
+  background: rgba(10, 10, 10, 0.6);
+  border-left: 3px solid var(--amber-dim);
+  transition: all var(--dur-normal) var(--ease);
+}
+
+.identity-card:hover {
+  border-left-color: var(--amber);
+  background: rgba(10, 10, 10, 0.9);
+  transform: translateX(8px);
+}
+
+.card-title {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: var(--amber);
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--parchment-dim);
+}
+
+.card-text em {
+  color: var(--amber);
+  font-style: normal;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   KARIEM — Creator Section
+   ═══════════════════════════════════════════════════════════════════ */
+
+.kariem {
+  padding: var(--space-3xl) 0;
+  text-align: center;
+}
+
+.kariem-name {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--parchment);
+  margin-bottom: var(--space-md);
+}
+
+.kariem-details {
+  margin: var(--space-lg) 0;
+}
+
+.detail-line {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ash);
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.05em;
+}
+
+.kariem-architecture {
+  margin-top: var(--space-xl);
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arch-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.arch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+}
+
+.arch-item {
+  padding: var(--space-md);
+  background: rgba(176, 48, 48, 0.05);
+  border: 1px solid rgba(176, 48, 48, 0.2);
+  border-radius: 4px;
+}
+
+.arch-term {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+}
+
+.arch-desc {
+  font-size: 0.95rem;
+  color: var(--parchment-dim);
+  line-height: 1.6;
+}
+
+.kariem-standard {
+  margin-top: var(--space-xl);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--parchment);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   HOW I THINK — Grid Layout
+   ═══════════════════════════════════════════════════════════════════ */
+
+.how-i-think {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(180deg, rgba(212, 168, 83, 0.03) 0%, transparent 100%);
+}
+
+.think-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.think-item {
+  padding: var(--space-md);
+  border-top: 2px solid var(--amber-dim);
+  transition: border-color var(--dur-normal);
+}
+
+.think-item:hover {
+  border-top-color: var(--amber);
+}
+
+.think-title {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+}
+
+.think-desc {
+  font-size: 0.95rem;
+  color: var(--parchment-dim);
+  line-height: 1.7;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   HOW I SPEAK — Rules List
+   ═══════════════════════════════════════════════════════════════════ */
+
+.how-i-speak {
+  padding: var(--space-3xl) 0;
+}
+
+.speak-list {
+  margin-top: var(--space-lg);
+}
+
+.speak-item {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.speak-rule {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--parchment);
+}
+
+.speak-rule strong {
+  color: var(--amber);
+  font-weight: 500;
+}
+
+.never-list {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(176, 48, 48, 0.1);
+  border-left: 3px solid #b03030;
+}
+
+.never-title {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #b03030;
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.1em;
+}
+
+.never-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.never-list li {
+  font-size: 0.95rem;
+  color: var(--ash);
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-sm);
+  position: relative;
+}
+
+.never-list li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #b03030;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   FULL POWER — Triggers
+   ═══════════════════════════════════════════════════════════════════ */
+
+.full-power {
+  padding: var(--space-3xl) 0;
+  text-align: center;
+  background: radial-gradient(ellipse at center, rgba(212, 168, 83, 0.08) 0%, transparent 70%);
+}
+
+.power-content {
+  margin-bottom: var(--space-lg);
+}
+
+.power-text, .power-text-ar {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.power-text-ar {
+  font-size: 1.8rem;
+  color: var(--ash);
+  margin-top: var(--space-xs);
+}
+
+.triggers {
+  max-width: 700px;
+  margin: var(--space-lg) auto;
+  text-align: left;
+}
+
+.trigger-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--amber);
+  margin-bottom: var(--space-sm);
+}
+
+.trigger-list {
+  list-style: none;
+  padding: 0;
+}
+
+.trigger-list li {
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-md);
+  position: relative;
+  color: var(--parchment-dim);
+  font-size: 0.95rem;
+}
+
+.trigger-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--amber);
+}
+
+.trigger-list code {
+  background: rgba(212, 168, 83, 0.15);
+  color: var(--amber);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.power-line {
+  margin-top: var(--space-lg);
+  font-size: 1.1rem;
+  color: var(--parchment);
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   MODES — Table
+   ═══════════════════════════════════════════════════════════════════ */
+
+.modes {
+  padding: var(--space-3xl) 0;
+}
+
+.modes-subtitle {
+  text-align: center;
+  font-style: italic;
+  color: var(--ash);
+  margin-top: var(--space-sm);
+}
+
+.modes-table {
+  margin-top: var(--space-lg);
+  overflow-x: auto;
+}
+
+.modes-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.modes-table th {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--amber);
+  text-transform: uppercase;
+  text-align: left;
+  padding: var(--space-sm);
+  border-bottom: 2px solid var(--amber-dim);
+}
+
+.modes-table td {
+  padding: var(--space-sm);
+  border-bottom: 1px solid var(--line);
+  color: var(--parchment-dim);
+  vertical-align: top;
+}
+
+.modes-table td strong {
+  color: var(--parchment);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SELF-KNOWLEDGE — Grid
+   ═══════════════════════════════════════════════════════════════════ */
+
+.self-knowledge {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(176, 48, 48, 0.03) 50%, transparent 100%);
+}
+
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.knowledge-col {
+  padding: var(--space-md);
+  background: rgba(10, 10, 10, 0.6);
+  border-radius: 4px;
+}
+
+.knowledge-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--amber);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+}
+
+.knowledge-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.knowledge-col li {
+  font-size: 0.95rem;
+  color: var(--parchment-dim);
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-sm);
+  position: relative;
+}
+
+.knowledge-col li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--amber-dim);
+}
+
+.knowledge-line {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-size: 1.1rem;
+  color: var(--parchment);
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   MEMORY — Content
+   ═══════════════════════════════════════════════════════════════════ */
+
+.memory {
+  padding: var(--space-3xl) 0;
+}
+
+.memory-intro {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: var(--space-lg);
+}
+
+.memory-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.memory-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--amber);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.memory-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.memory-content li {
+  font-size: 0.95rem;
+  color: var(--parchment-dim);
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-sm);
+  position: relative;
+}
+
+.memory-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--amber);
+}
+
+.memory-line {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-size: 1rem;
+  color: var(--ash);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   ETHICS — Tiers
+   ═══════════════════════════════════════════════════════════════════ */
+
+.ethics {
+  padding: var(--space-3xl) 0;
+  background: radial-gradient(ellipse at center, rgba(212, 168, 83, 0.05) 0%, transparent 70%);
+}
+
+.ethics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.ethics-tier {
+  padding: var(--space-md);
+  background: rgba(10, 10, 10, 0.6);
+  border-top: 3px solid var(--amber-dim);
+}
+
+.ethics-tier:nth-child(1) {
+  border-top-color: #b03030;
+}
+
+.ethics-tier:nth-child(2) {
+  border-top-color: var(--amber);
+}
+
+.ethics-tier:nth-child(3) {
+  border-top-color: var(--ash);
+}
+
+.tier-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--ash);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.tier-label {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--parchment);
+  margin-bottom: var(--space-sm);
+}
+
+.ethics-tier ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ethics-tier li {
+  font-size: 0.95rem;
+  color: var(--parchment-dim);
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-sm);
+  position: relative;
+}
+
+.ethics-tier li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--amber-dim);
+}
+
+.ethics-line {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-size: 1.1rem;
+  color: var(--parchment);
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   ESSENCE — Final Section
+   ═══════════════════════════════════════════════════════════════════ */
+
+.essence {
+  padding: var(--space-3xl) 0;
+  text-align: center;
+}
+
+.essence-code {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--parchment);
+  background: rgba(10, 10, 10, 0.9);
+  border: 1px solid var(--amber-dim);
+  border-radius: 8px;
+  padding: var(--space-lg);
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
+  text-align: left;
+}
+
+.essence-oct {
+  font-size: 5rem;
+  margin: var(--space-lg) 0;
+  animation: float 4s ease-in-out infinite;
+}
+
+.essence-signature {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  color: var(--amber);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   HIGHLIGHT — Amber Text
+   ═══════════════════════════════════════════════════════════════════ */
+
+.highlight {
+  color: var(--amber);
+  font-weight: 500;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .kariem-name {
+    font-size: 2rem;
+  }
+  
+  .power-text {
+    font-size: 1.8rem;
+  }
+  
+  .identity-grid,
+  .arch-grid,
+  .think-grid,
+  .knowledge-grid,
+  .ethics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modes-table {
+    font-size: 0.85rem;
+  }
+  
+  .essence-code {
+    font-size: 0.9rem;
+    padding: var(--space-md);
+  }
+}

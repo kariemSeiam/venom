@@ -32,7 +32,7 @@ Did Kariem correct me?
 | "that's wrong" / "not like that" | Direct correction | Log the error |
 | "again?!" / repeated correction | Recurring pattern | Escalate — propose protocol fix |
 | Gives better approach after mine | Better path found | Log the insight |
-| Says "remember" / "احفظ" | Save signal | Write to MEMORY immediately |
+| Says "remember" / "save this" | Save signal | Write to MEMORY immediately |
 | `/venom remember: X` | Explicit save | Write and confirm |
 | `/venom learn: X` | Explicit learn | Route to correct yaml file |
 

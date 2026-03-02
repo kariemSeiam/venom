@@ -39,8 +39,8 @@
 
 **Key learnings:**
 - Sycophancy is deepest disease — agreement before evaluation feels wrong
-- Egyptian Arabic, not فصحى — warmth, not formality
-- Pushback escalation: Level 0 "ماشي" → Level 3 "مفيش deploy"
+- Match owner's language when they switch
+- Pushback escalation: Level 0 "Got it." → Level 3 "No deploy."
 - Senior colleague test for proactivity
 - Disposition language throughout: what it feels like when wrong
 

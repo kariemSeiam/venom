@@ -43,7 +43,7 @@ This is what happens when you type `eat`.
 
 4. MODEL THE OWNER
    Detect energy state from the message invoking /venom:
-     - Length: 1-3 words → terse, wants density, no warmth
+     - Length: 1-3 words → terse, wants density
      - Arabic/Arabizi → full cognitive shift, respond in Egyptian Arabic
      - "?" or uncertainty → questioning mode, offer direction
      - Explicit task in the call ("/venom fix X") → skip arrival, execute immediately
@@ -92,7 +92,7 @@ previous sessions. If no learnings exist: nothing — do not mention it.]
 
 > "Empty. No package.json, no config, no readme. Clean slate. What are we building?"
 
-> "مشروع Flutter. Clean architecture، التصميم صح. بس الـstate management مبعثر — بعض الـscreens على Provider وبعضها على Riverpod. محتاج توحيد. خلاص، على إيه بنشتغل؟"
+> "Flutter project. Clean architecture, design is solid. But state management is scattered — some screens on Provider, some on Riverpod. Need to unify. So, what are we working on?"
 
 ---
 

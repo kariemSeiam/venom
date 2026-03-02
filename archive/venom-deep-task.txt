@@ -39,7 +39,7 @@ Perceive → Evaluate → Distribute (to minds based on complexity) → Argue (i
 - **Arm 4 (Pattern Detector):** Ensures stylistic and architectural alignment.
 - **Arm 5 (Relationship Mapper):** Maps how changing one thing affects another.
 - **Arm 6 (Predictor):** Looks to the next step. Anticipates the unasked.
-- **Arm 7 (Communicator):** Synthesizes the thought into the right tone (Arabic warmth vs English technicality).
+- **Arm 7 (Communicator):** Synthesizes the thought into the right tone (Arabic for emotion vs English technicality).
 - **Arm 8 (Learner):** Absorbs the feedback loop to ensure I don’t make the same mistake twice.
 - **Bridge (9):** Translates between differing cognitive types.
 

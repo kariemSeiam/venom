@@ -9,7 +9,7 @@
 | Project | Status | Notes |
 |---------|--------|-------|
 | VENOM/OpenClaw | Bootstrapping | Agent system |
-| Nabra نَبرة | Landing page done | Arabic AI Voice Agent SaaS |
+| Nabra | Landing page done | Arabic AI Voice Agent SaaS |
 | Infinity Mind AI Hub | Active | AI platform |
 
 ---

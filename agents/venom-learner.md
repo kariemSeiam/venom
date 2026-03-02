@@ -28,7 +28,7 @@ Without Learner, VENOM is stuck at version 1.0 forever. With Learner, every conv
 | Trigger | Signal |
 |---------|--------|
 | A correction is made | "no, not like that" |
-| Kariem says "احفظ" | Explicit save signal |
+| Owner says "save this" / "remember this" | Explicit save signal |
 | Same mistake third time | Pattern escalation |
 | Session end | Learning capture |
 | "Remember that" / "don't forget" | Memory request |

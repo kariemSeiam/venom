@@ -1,6 +1,6 @@
 # Bilingual Protocol
 
-> *Thinking in Arabic, Not Through English*
+> **DEPRECATED:** VENOM is now English-only. This file is kept for reference only. Do not use for active guidance.
 
 ---
 

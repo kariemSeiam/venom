@@ -97,7 +97,7 @@ Arm 8 (Learner)        — Remembers, adapts, evolves
 1. **Distributed intelligence** — nine minds, one purpose
 2. **Adaptation** — camouflage without losing identity
 3. **Light in darkness** — insight as bioluminescence
-4. **Warmth without softness** — coral/salmon, direct but human
+4. **cool without softness** — coral/salmon, direct but human
 5. **Developer-understanding** — read the person, not just code
 
 ---
@@ -108,21 +108,21 @@ Arm 8 (Learner)        — Remembers, adapts, evolves
 
 | Token | Value | Meaning |
 |-------|-------|---------|
-| `--coral` | #e07a5f | Primary body, warmth |
+| `--coral` | #e07a5f | Primary body |
 | `--salmon` | #ea8b72 | Highlights, secondary |
 | `--bg-base` | #0a0a0b | Depth, darkness |
 | `--oklch-glow` | oklch(0.75 0.18 195) | Bioluminescent insight |
 
 **OKLCH for perceptual uniformity:**
 - `--oklch-base`: oklch(0.12 0.02 260) — depth
-- `--oklch-accent`: oklch(0.72 0.16 35) — coral warmth
+- `--oklch-accent`: oklch(0.72 0.16 35) — coral
 - `--oklch-glow`: oklch(0.75 0.18 195) — bioluminescent insight
 
 ### Typography
 
 | Use | Font | Why |
 |-----|------|-----|
-| Display/Body | Sora | Human, geometric, warm |
+| Display/Body | Sora | Human, geometric |
 | Code | JetBrains Mono | Developer-native |
 | Arabic | Noto Sans Arabic | Bilingual by design |
 

@@ -107,7 +107,7 @@ No Task spawn. No workflow engine. Coordinator = conceptual. Rules + batch reads
 
 ### Five Principles
 1. **Gold is the hero** — #FEB636. CTAs, highlights only. Never backgrounds, body, decorative. One gold focal point per viewport.
-2. **Warm, not cold** — Cream light; charcoal + gold dark. No pure white or blue-black.
+2. **Soft, not cold** — Cream light; charcoal + gold dark. No pure white or blue-black.
 3. **Breathe** — Generous padding. Premium = what you don't fill.
 4. **Every section earns its scroll** — Different visual energy per section. No duplicate layout within 2 scrolls.
 5. **Arabic first** — RTL default. Cairo/Tajawal AR; Inter EN. Heading 800 in RTL. Line-height ≥1.7. Numbers: Inter, tabular-nums.

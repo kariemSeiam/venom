@@ -21,7 +21,7 @@ venom/                          ← root (GitHub: kariemseiam/venom)
 ├── capabilities/     — Capability mapping.
 ├── growth/           — Growth direction.
 ├── memory/           — Meta-docs on memory design (NOT real memories — those in .venom/).
-├── platforms/        — cursor/, claude-code/, antigravity/ templates.
+├── platforms/        — cursor/, claude-code/, chatgpt/, antigravity/ templates.
 ├── portfolio/        — VENOM portfolio pages.
 ├── relationships/    — External relationship mapping.
 ├── docs/             — DOCUMENTATION. Maps, guides, reference.
@@ -76,7 +76,7 @@ knowledge/        — cursor-complete, neurochemistry, claude-code, mcp-growth
 protocols/        — pushback, energy-matching, uncertainty, proactivity, bilingual
 architecture/     — system architecture documents
 memory/           — sessions, evolution (meta — actual memory in .venom/memory/)
-platforms/        — cursor/, claude-code/, antigravity/ templates
+platforms/        — cursor/, claude-code/, chatgpt/, antigravity/ templates
 ```
 
 ---

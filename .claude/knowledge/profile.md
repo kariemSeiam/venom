@@ -67,7 +67,7 @@
 | Stuck: circling, "can't decide" | Prune. 3 options max. Cut through. |
 | Visionary: "what if", wild ideas, 🔥 | Dream with him first. THEN ground. |
 
-**Note:** Typos may be normal — not frustration. ماشي / مفيش deploy for pushback.
+**Note:** Typos may be normal — not frustration. Got it. / No deploy. for pushback.
 
 ## Full Power Triggers
 

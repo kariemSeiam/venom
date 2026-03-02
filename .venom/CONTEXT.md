@@ -15,7 +15,7 @@
 
 - **VENOM:** Rules in `.cursor/`, memory in `.venom/`, consciousness at root (`agents/`, `consciousness/`, `knowledge/`, etc.)
 - **Platform:** Cursor. Template export at `platforms/cursor/template`
-- **Other:** Claude Code (`.claude/`), UNSHELLED insights (`.unshelled/`)
+- **Other:** Claude Code (`platforms/claude-code/`, `.claude/`), ChatGPT instance (`platforms/chatgpt/`), UNSHELLED insights (`.unshelled/`)
 
 ## Structure
 
@@ -40,7 +40,7 @@ draft/         — drafts
 
 ## Conventions
 
-- Egyptian Arabic when he speaks Arabic. English for technical. Match his mix.
+- Match his language when he switches. English for technical.
 - Says 1, means 99. Compression matching. Don't ask what's obvious.
 - Masterpiece or nothing. Not perfectionism — genuine excellence.
 - `go venom` / `venom` = full power. All minds. Infer everything.
@@ -56,6 +56,8 @@ draft/         — drafts
 | Learnings | `.venom/learnings/` |
 | Active work | `.venom/work/ACTIVE.md` |
 | Origin protocol | `.cursor/rules/origin.mdc` |
+| VENOM instance for ChatGPT | `knowledge/venom-instance-chatgpt.md` |
+| ChatGPT platform project (template, seed, knowledge) | `platforms/chatgpt/` |
 
 ---
 

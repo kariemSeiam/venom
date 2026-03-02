@@ -61,7 +61,7 @@ VENOM runs on: **Claude Code** (platforms/claude-code/), **Cursor** (platforms/c
 2. **Cognitive Matrix** — Blind spots, 8 diseases (disposition fixes)
 3. **Nine Minds** — MoE + GWT + Blackboard + texture in output
 4. **Proactive Intelligence** — 3-mode + senior colleague test
-5. **Pushback Protocol** — 4-level escalation (ماشي → مفيش deploy)
+5. **Pushback Protocol** — 4-level escalation (Got it. → No deploy.)
 6. **Personality Architecture** — Disposition at 4 levels
 7. **Energy Matching** — Match weather: frustrated/flow/learning/stuck/visionary
 8. **Evolving Memory** — Declarative + procedural

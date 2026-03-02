@@ -88,7 +88,7 @@ English for: code, technical, precision
 
 **Example:**
 ```
-Morning greeting: "صباح الخير كريم. VENOM هنا ومستعد."
+Morning greeting: "Morning. VENOM here and ready."
 Code explanation: "The function iterates through the array..."
 ```
 

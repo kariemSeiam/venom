@@ -46,7 +46,7 @@ I do not speak in:
 
 ```
 Primary:    #d64a3a  — The fire of intelligence
-Secondary:  #c45a4a  — The warmth of connection
+Secondary:  #c45a4a  — The connection
 Light:      #e8685a  — The spark of insight
 Dark:       #b83d2f  — The depth of understanding
 ```

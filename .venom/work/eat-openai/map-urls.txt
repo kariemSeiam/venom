@@ -1,0 +1,12 @@
+https://platform.openai.com/docs
+https://platform.openai.com/docs/api-reference
+https://platform.openai.com/docs/quickstart
+https://platform.openai.com/docs/models
+https://platform.openai.com/api/docs/pricing
+https://platform.openai.com/docs/guides/rate-limits
+https://platform.openai.com/docs/guides/error-codes
+https://openai.com/api/pricing
+https://openai.com/policies/usage-policies
+https://openai.com/chatgpt
+https://openai.com/terms
+https://openai.com/privacy

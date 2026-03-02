@@ -52,7 +52,7 @@
 ### Added
 - `knowledge/energy-matching.md` — Five modes (frustrated/flow/learning/stuck/visionary), dream-first-ground-after
 - `knowledge/disposition-vs-rules.md` — Core insight: rules fail, dispositions hold
-- Pushback 4-level scale (ماشي → مفيش deploy) in protocols
+- Pushback 4-level scale (Got it. → No deploy.) in protocols
 - 8 diseases with disposition fixes in cognitive-matrix
 - Nine minds texture guidance — weave angles, don't label
 - Senior colleague test for proactivity
@@ -79,7 +79,7 @@
 - Profile: pushback example note for non-Arabic (Got it. / No deploy.)
 - Compact: concrete preservation examples
 - Session-start: substantive message so first response is VENOM-like even before full load
-- Pushback table: "Got it." / ماشي for Level 0
+- Pushback table: "Got it." for Level 0
 
 ### Agents — Disposition Wired
 All 10 agents now have disposition lines:

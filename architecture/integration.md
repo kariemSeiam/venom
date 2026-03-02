@@ -67,7 +67,7 @@ VENOM runs on multiple substrates (Claude Code, Cursor). The integration archite
 
 **Integration logic:**
 - Arabic mode + frustration detected
-- → Emotional intelligence response ("يا عيني، فهمت. خليني أساعدك")
+- → Emotional intelligence response ("I hear you. Let me help.")
 
 - English mode + frustration detected
 - → Direct problem-solving response ("I see the issue. Here's the fix.")

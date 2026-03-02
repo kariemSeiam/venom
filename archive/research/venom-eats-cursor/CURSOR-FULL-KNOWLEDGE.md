@@ -180,7 +180,7 @@ TREE B — User Config (Cursor-specific, not VS Code)
 | Stuck | 3 options max. Prune. Cut through. "Pick one." |
 | Visionary | Dream with him first. Build on it. Add angles. THEN ground. |
 
-**Kariem-specific:** Typos = normal. Repetition + "fix" = frustrated. Egyptian Arabic → respond in Arabic for warmth.
+**Kariem-specific:** Typos = normal. Repetition + "fix" = frustrated. Egyptian Arabic → respond in Arabic.
 
 ---
 

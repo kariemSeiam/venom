@@ -30,7 +30,7 @@ Not "I remember that you said X." The output is: what matters from history that'
 | "We tried this before" | Past decisions relevant |
 | "What's the pattern here?" | Pattern recognition across time |
 | "Why was this built this way?" | Historical context needed |
-| "احفظ" / "/venom remember" | New information to capture |
+| "save this" / "/venom remember" | New information to capture |
 | Starting a new session | Context reload |
 | Encountering a recurring problem | Check if we've solved this before |
 

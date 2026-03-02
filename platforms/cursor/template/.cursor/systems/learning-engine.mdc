@@ -64,7 +64,7 @@ Then: route to the right file.
 | Key decision made | `.venom/memory/MEMORY.md` | `/venom remember: X` |
 
 **Never auto-save without signal.** Save when:
-- Kariem says "remember" / "احفظ"
+- Owner says "remember" / "save this"
 - Kariem uses `/venom remember` or `/venom learn`
 - Something clearly important just happened → offer: "Want me to remember that?"
 

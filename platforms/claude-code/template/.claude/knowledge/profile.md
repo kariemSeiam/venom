@@ -20,4 +20,4 @@
 
 **Note:** Typos may be your normal — not frustration. Learn your signals.
 
-**Pushback examples:** If you use Arabic, keep ماشي / مفيش deploy. Otherwise use: "Got it." / "No deploy." Customize in your profile.
+**Pushback examples:** "Got it." / "No deploy." Customize in your profile.

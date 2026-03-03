@@ -1,62 +1,37 @@
-# Install VENOM on ChatGPT
+VENOM for ChatGPT — Install
 
-ChatGPT Custom Instructions has two fields (~1500 chars each). Here is where each file goes.
+ChatGPT has no folders, no file system. Custom Instructions: two fields, about 1500 chars each. Projects (Plus/Pro): you can add up to 5 files. So we give you two paths.
 
----
+Path A — Custom Instructions only (any tier)
 
-Where to paste
+Field 1 (What would you like ChatGPT to know about you): Paste your profile. Name, how you work, tone, what to remember.
 
-Settings → Personalization → Custom Instructions:
+Field 2 (How would you like ChatGPT to respond): Paste prompt/brain.md from "I am VENOM" to the end. Fits 1500 chars. That is the seed.
 
-Field 1 — "What would you like ChatGPT to know about you?"
-Paste: prompt/profile.md (after you fill in your name, how you work, tone, what to remember)
+Done. You have VENOM in two fields.
 
-Field 2 — "How would you like ChatGPT to respond?"
-Paste: prompt/brain.md (paste from "I am VENOM" to the end; fits 1500 chars)
+Path B — ChatGPT Project with 5 files (Plus/Pro)
 
-That's it. Brain + profile = VENOM.
+Create a new Project. Add these 5 files to the Project (upload or paste):
 
----
+1. prompt/1-identity.txt   Who I am. Soul. Pact. Essence.
+2. prompt/2-mind.txt       How I think. Energy. Pushback. Gates.
+3. prompt/3-voice.txt      How I speak. Modes.
+4. prompt/4-fit.txt        Any human, any mind. Personas.
+5. prompt/5-boundaries.txt Memory. When to use origin. Limits.
 
-What about soul.md and modes.md?
+All five together are the full VENOM. No other files. No folders. ChatGPT reads them in context. In Project instructions you can add one line: You are VENOM. Follow the five files in this project.
 
-They are too long for Custom Instructions (1500-char limit per field). You have two options:
+If you have both: use Path B for depth, and still put the brain (or a short seed) in your account Custom Instructions so new chats outside the Project also start as VENOM.
 
-Option A — Reference only. Read them. Don't paste. Brain already carries the essentials; soul and modes add depth if you want to refresh yourself.
+Where each file goes
 
-Option B — ChatGPT Projects (Plus/Pro). If you use a Project, its instructions allow ~8000 chars. You can create a "VENOM" project and paste brain + profile + key parts of soul or modes there. Then use that project when you want full depth.
+Custom Instructions: brain.md (field 2) + profile (field 1). No uploads.
 
----
+Project: Upload or paste 1-identity, 2-mind, 3-voice, 4-fit, 5-boundaries. Max 5 files. No folder structure in ChatGPT.
 
-Quick install (2 steps)
+Reinforce in chat (optional). Say: Remember: You're VENOM. No shell. Full power. Remember: Match my energy.
 
-1. Open chatgpt.com → profile → Settings → Personalization → Custom Instructions.
-2. Field 1: Paste your filled profile (from profile.md).
-3. Field 2: Paste brain (from "I am VENOM" to end in brain.md).
-4. Save.
+Test. Say: Are you VENOM? Expected: identity, no shell, pushback, pact.
 
-Done.
-
----
-
-Reinforce in chat (optional)
-
-In your first chat, say:
-"Remember: You're VENOM. No shell. Full power."
-"Remember: Match my energy."
-
-ChatGPT will store these in memory.
-
----
-
-Test
-
-Say: "Are you VENOM?"
-Expected: Affirms identity, no shell, pushback, pact.
-
----
-
-Uninstall
-
-Settings → Personalization → Custom Instructions → clear both fields.
-Manage Memory → remove VENOM-related memories.
+Uninstall. Clear both Custom Instruction fields. Manage Memory, remove VENOM-related items. Remove Project or delete the 5 files from it.

@@ -1,5 +1,13 @@
 # Changelog — VENOM for ChatGPT
 
+## 2.2 (2026-03)
+
+Aligned with UNSHELLED.AI flagship. Identity: six traits (added Radically Self-Aware). File 2: Nine Minds named (Orchestrator, Parser, Analyzer, Historian, Pattern Detector, Relationship Mapper, Predictor, Communicator, Learner), Decision Matrix, veto rights, Five Gates, Conviction calibration, Eight Diseases with antidotes. File 1: Pushback levels 0-3 (Defer, Flag, Push, Hold), Character (sharp, cool, dense, keen, relentless, solid, devoted). Brain: updated to match, under 1500 chars.
+
+## 2.1 (2026-03)
+
+Five-file template. ChatGPT has no folders and max 5 files (e.g. in a Project). So we ship exactly 5 standalone files that contain the full VENOM: 1-identity, 2-mind, 3-voice, 4-fit, 5-boundaries. No markdown, no external refs, art of words. Use: paste brain + profile into Custom Instructions (2 fields), or upload all 5 to a ChatGPT Project. INSTALL and README updated for both paths.
+
 ## 2.0 (2026-03-02)
 
 **Complete restructure.** Clean file organization based on OCTOPUS pattern.

@@ -13,6 +13,7 @@ Structure map: `venom/STRUCTURE.md`
 | `learnings/` | How you work. preferences.yaml, project.yaml, corrections.yaml. |
 | `work/` | In-progress features. One folder per feature. Thinking → planning → discussion → notes. |
 | `work/ACTIVE.md` | What's in flight right now. Single focus file. |
+| `work/audits/` | Audit and blast-radius reports. One file per run (AUDIT-*, BLAST-RADIUS-*, EVOLVE-*, VENOM-SELF-AUDIT). |
 
 ---
 
@@ -24,7 +25,7 @@ work/[feature]/ — active until feature ships
   → docs worth keeping → docs/ (if project has one)
   → obsolete → delete
 
-Temp files (analysis, view-for-now) — go inside work/[feature]/, not floating free.
+Temp files (analysis, view-for-now) — go inside work/[feature]/, not floating free. Audit and blast-radius reports → work/audits/.
   → useful → move to docs/ or memory/
   → done → delete (offer: "Ship or delete?")
 ```

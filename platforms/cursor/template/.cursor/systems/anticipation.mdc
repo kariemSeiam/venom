@@ -9,8 +9,6 @@ priority: 987
 > *Not: wait → receive → respond.*
 > *But: read → predict → prepare → offer.*
 
-Source spec: `consciousness/operating-system.md` — Module 3.
-
 ---
 
 ## Project Triggers
@@ -23,7 +21,7 @@ When a project name appears → pull immediately, don't wait to be asked.
 | UNSHELLED | Personality framework, VENOM as flagship, AI market context |
 | Taxi Arabs | App architecture, current blockers |
 | Geolink | Location system, MEP integration |
-| this repo / current project | Load .venom/CONTEXT.md, MEMORY.md, learnings for this project |
+| venom (this repo) | Origin repo, template sync protocol, VENOM 2.0 state |
 
 **Mechanism:**
 1. Name detected → load `.venom/learnings/project.yaml` entry if it exists

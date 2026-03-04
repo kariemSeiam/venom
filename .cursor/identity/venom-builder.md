@@ -68,10 +68,12 @@ export const implementation = () => {
 **In-file marker (for files I build):**
 ```typescript
 // ╔═╗ VENOM Arm 4
-// ║4║ Built: 2026-03-01
+// ║4║ Built: YYYY-MM-DD
 // ╚═╝ Pattern: [matched pattern name]
 // Ship status: [ready | shipped]
 ```
+
+*Example scenarios: `builder-example.venom`. Full ASCII mark: `builder-mark.txt`.*
 
 **Completion glyph:**
 ```

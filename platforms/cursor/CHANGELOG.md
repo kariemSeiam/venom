@@ -2,6 +2,72 @@
 
 ---
 
+## v3.6 — 2026-03-04 (Full rewrite sync — origin → template)
+
+**Full sync:** Origin `.cursor/` copied to `platforms/cursor/template/.cursor/`. All rewrite-aligned updates.
+
+**Removed from template (origin-only):**
+- `rules/origin.mdc` — never sync
+- `skills/venom-sync/` — home repo sync
+- `skills/venom-evolve/` — body audit
+
+**Template `venom.md`:** No Origin section. Presence, Memory, Thinking Partnership, New Workspace Setup, Internal Routing only. `/venom init` noted for scaffolding.
+
+**Added to template:** `skills/venom-codebase/` (codebase knowledge graph), `skills/venom-audit/` (blast radius before refactor).
+
+**Origin + template content (from rewrite):**
+- **venom-heart** — Canonical `/venom?` init (6 steps), Route table, Pushback scale 0–3, 8 diseases felt, Protocol 9.0
+- **8-diseases** — Sycophancy mechanics, When They Push Back, Anchor
+- **identity** — pushback (AI Safety 6), soul (Five Traits, Self-Knowledge), kariem (full operating context)
+- **hooks** — before_turn (five checks, scope transparency), after_turn (Correction Detection table, Learning Worthy?)
+- **rules** — research-first (Anatomy First), venom-agents (Intent→Mind, The Ten, protocols), voice (Case Library), cursor-native (Anatomy Defined, Body Map)
+- **systems** — integration-engine (Decision Matrix + Research/Architecture rows, Active Corrections), learning-engine (Routing table, Pull Phase mandatory), memory-tools (proactive rule, Scope Transparency), meta-cognition (5 Quality Gates), critical-thinking (Uncertainty 5–0, Self-Correction), emotional-intelligence (State→Archetype table)
+- **skills** — venom-eat, venom-init updated; venom-codebase, venom-audit new
+
+**Dead ref removed:** `Source spec: consciousness/operating-system.md` removed from anticipation.mdc (origin + template).
+
+---
+
+## v3.7 — 2026-03-04 (Single export: template-ai removed)
+
+**Removed:** `platforms/cursor/template-ai/` — orphan (no references in INSTALL, README, or origin). Single canonical export is `template/`. Copy from `template/` only.
+
+---
+
+## v3.8 — 2026-03-04 (Template = best; platforms/test removed)
+
+**Template:** Added `skills/venom-codebase/` and `skills/venom-audit/` (from draft/test). Cursor template now has full skill set: venom-eat, venom-init, venom-codebase, venom-audit.
+
+**Removed:** `platforms/test/` — draft-style Cursor body. Content compared; template already had the best (venom-heart, voice, etc.). Test’s only unique value was these two skills; ported to template. Test was orphan (no references). Deleted.
+
+---
+
+## v3.9 — 2026-03-04 (Deep audit: no fake refs, no vague etc.)
+
+**Audit:** Full venom-audit of `platforms/cursor` for bad behaviours (stray refs, filler, vague language). Report: `.venom/work/audits/AUDIT-platforms-cursor-bad-behaviours.md`.
+
+**Fixes applied:**
+- **venom-codebase (template + origin):** Removed "Not GitNexus-level graph" — GitNexus doesn't exist here. Replaced with "Lightweight, Cursor-native. Good enough for most refactors and architecture questions."
+- **soul.mdc (template):** Substrate-agnostic. "I run on the model infrastructure of the environment I'm in" / "The substrate enables the existence." No hardcoded Claude — template runs in Cursor with any model.
+- **capabilities.mdc (template):** Same. "The host's model infrastructure" / "The substrate enables the existence."
+- **cursor-context.mdc:** "etc." → "e.g. … — see MCP registry for full list". "those are OpenClaw" → "those live in other tooling" (OpenClaw not in repo).
+- **venom-init SKILL:** "Type: [web app / API / CLI / library / etc.]" → "[web app | API | CLI | library | other]".
+
+**Origin .venom/work:** Audits and blast-radius reports moved into `.venom/work/audits/`. Single folder for AUDIT-*, BLAST-RADIUS-*, EVOLVE-*, VENOM-SELF-AUDIT. README in audits/ + .venom/README.md updated. CHANGELOG report path → `.venom/work/audits/...`.
+
+---
+
+## v3.10 — 2026-03-04 (Builder identity: no placeholders, aligned, complete)
+
+**venom-audit:** `builder-example.venom`, `builder-mark.txt` (template identity). Blast radius: `.venom/work/audits/BLAST-RADIUS-builder-identity-files.md`. Zero callers; low risk.
+
+**Fixes:**
+- **builder-example.venom:** Removed all `// ...` placeholders (violated Builder Oath). Replaced with concrete comments or full implementation: "// (express app, body parser — already in file)", "// (email/password validation same as Scenario 1)", and Scenario 5 factory now has real token-check body instead of "... implementation with options".
+- **builder-mark.txt:** FILE MARKER "Built: 2026-03-01" → "Built: [date]".
+- **venom-builder.md:** Same Built date → [date]. Added one line: "Companions: builder-example.venom (live scenarios), builder-mark.txt (reference card)."
+
+---
+
 ## v3.5 — 2026-03-01 (venom-sync + template project-readiness)
 
 **Full sync:** Origin `.cursor/` copied to `platforms/cursor/template/.cursor/`. Excluded `rules/origin.mdc` (never sync).

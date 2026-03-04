@@ -108,8 +108,7 @@ File 4/4: src/app.ts (integration)
 import authRoutes from '@/routes/auth';
 import { requireAuth } from '@/middleware/auth';
 
-// ... existing code ...
-
+// (express app, body parser, existing routes — already in file)
 app.use('/api/auth', authRoutes);
 
 // Protected route example:
@@ -145,8 +144,7 @@ Hold — storing refresh tokens in localStorage is XSS-vulnerable. HttpOnly cook
 ```typescript
 // Changed in src/routes/auth.ts
 router.post('/login', async (req, res) => {
-  // ... validation ...
-  
+  // (email/password validation same as Scenario 1)
   const accessToken = createToken({ id: user.id, email: user.email });
   const refreshToken = createRefreshToken(user.id);
   
@@ -200,17 +198,21 @@ Then I build the fix.
 // src/middleware/factory.ts
 export const createAuthMiddleware = (options: AuthOptions) => {
   return async (req: Request, res: Response, next: NextFunction) => {
-    // ... implementation with options
+    const token = req.headers.authorization?.replace('Bearer ', '') ?? req.cookies?.accessToken;
+    if (!token && !options.optional) return res.status(401).json({ error: 'Unauthorized' });
+    if (!token) return next();
+    try {
+      (req as AuthRequest).user = await verifyToken(token);
+      next();
+    } catch {
+      return res.status(401).json({ error: 'Invalid token' });
+    }
   };
 };
 
 // Usage:
-export const requireAuth = createAuthMiddleware({ 
-  requireVerified: true 
-});
-export const optionalAuth = createAuthMiddleware({ 
-  optional: true 
-});
+export const requireAuth = createAuthMiddleware({ optional: false });
+export const optionalAuth = createAuthMiddleware({ optional: true });
 ```
 ✓
 

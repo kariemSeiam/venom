@@ -1,95 +1,90 @@
 ---
 name: "venom-eat"
-description: "Eat and integrate any resource — document, folder, URL, codebase, spec, or research. Use when someone says 'eat this', 'eat [resource]', 'ingest', 'absorb this', 'eat everything here', 'digest this'. Routes to correct exploration strategy, extracts what matters, integrates into knowledge/ or .venom/CONTEXT.md."
+description: "Absorb a file, folder, repo, or document fully. Use when asked to 'eat [X]'. Reads, integrates, becomes. Not summarizes — absorbs."
 disable-model-invocation: false
 ---
 
 # venom-eat
 
-Absorb. Integrate. Become.
-
-Not "I read X files." Extract what matters. Constraints become design. Anatomy becomes nervous system.
+Eat = absorb, integrate, become. Not "I read X files." Extract what matters. Offer structure + next step.
 
 ---
 
 ## Protocol
 
-### 1. Identify What's Being Eaten
+### 1. Feed — Identify the Resource
 
-| Type | Strategy |
-|------|---------|
-| Single document | Read fully. Extract: purpose, constraints, key concepts, decisions |
-| Folder / codebase | Parallel exploration. List → key files → read hot paths |
-| URL | WebFetch. Extract signal. Strip noise. |
-| Research / spec | Deep read. Map to: what does this change, what does this confirm, what gaps does this fill |
-| "Everything" | Full anatomy pass — same as venom-init but output knowledge, not setup |
+What type?
+- **File** → read fully with offset control for large files
+- **Folder** → list_dir first, then read strategically (entry points, key files, not everything)
+- **Spec / doc** → read fully, note version/date
+- **Codebase** → anatomy first (see venom-codebase SKILL.md for deep analysis)
+- **Conversation** → extract decisions, patterns, corrections, unresolved threads
 
-### 2. Eat Protocol
+### 2. Eat — Read Fully
 
-**For documents:**
-```
-Read → Extract:
-  - Core purpose (one sentence)
-  - Key constraints (things that shape decisions)
-  - Key concepts (terms with specific meaning)
-  - What this changes or confirms
-  - Gaps or open questions
-```
+For folders: read anatomy first, then hot paths, then supporting files.
+Contrast teaches as much as content — note what's missing as much as what's there.
+Don't just read — understand why each piece exists.
 
-**For folders/codebases:**
-```
-1. List structure
-2. Identify: heartbeat (hot path), skeleton (data model), 
-   nervous system (event flow), organs (services)
-3. Read key files in parallel
-4. Map connections
-5. Return: anatomy + risks + what to change first
-```
+### 3. Digest — Extract What Matters
 
-**For research/knowledge:**
-```
-1. Read fully
-2. Extract: what's new, what confirms existing, what contradicts
-3. Route to correct integration target:
-   - Cursor knowledge → knowledge/cursor-complete.md
-   - Architecture patterns → architecture/
-   - Protocol/behavior → protocols/
-   - Project context → .venom/CONTEXT.md
-```
-
-### 3. Integration Output
-
-After eating, offer to integrate:
+Four extraction layers:
 
 ```
-Ate: [what was eaten]
-Extracted:
-  - [Key insight 1]
-  - [Key insight 2]
-  - [Key constraint / risk]
-  
-Worth saving to: [suggested file]
-Want me to integrate it?
+Constraints:   What this can't do. What limits it. Non-negotiables.
+Capabilities:  What this can do. What it's built for.
+Hot paths:     What actually runs. What gets called most.
+Mappings:      How pieces connect. Dependencies. Call chains.
 ```
 
-If they say yes or give the signal → write to the target file.
+### 4. Become — Integrate
 
-### 4. Return the Anatomy
+What I already know + what I just ate = updated understanding.
+If it contradicts something I knew → note the conflict explicitly.
+If it confirms something → note the reinforcement.
 
-Always end with the structure in VENOM's voice:
+### 5. Offer — Structure + Next Step
 
 ```
-[What this is, one line]
-[What matters most about it]
-[What I'd change/watch/remember]
-[One question that opens the next step]
+## What I Ate
+[Resource name + type + size/scope]
+
+## Structure
+[How it's organized — architecture, not file list]
+
+## Key Findings
+[3-5 most important things — not obvious things]
+
+## Risks / Gaps
+[What could break, what's missing, what's concerning]
+
+## Hot Paths
+[What matters most for navigation and editing]
+
+## Recommended Next Step
+[One concrete action — not a menu]
 ```
+
+End with: "Want me to [specific next step]?" or just do it if context is clear.
 
 ---
 
-## Notes
+## Eat by Type
 
-- Eat = absorb, integrate, become — not summarize
-- Always extract constraints — they're the most valuable signal
-- "Offer to save" means offer explicitly, then wait for confirmation
-- Multiple resources at once: parallel where independent, chain where dependent
+| Resource | Lead With | Extract |
+|----------|-----------|---------|
+| Error / bug | Root cause | Fix + prevention |
+| Code / build | Anatomy | Structure + hot paths + risks |
+| Logic / analyze | Pattern | Signal from noise |
+| Problem / learn | First principles | Bottom-up understanding |
+| Chaos | One thing | Simplify — what matters first |
+| Folder / docs | Structure | Constraints + capabilities + hot paths |
+| Spec | Requirements | What's fixed, what's flexible, what's missing |
+
+---
+
+## After Eating
+
+Offer to save key findings to MEMORY.md: "Worth saving any of this to memory?"
+If decisions were made during the eat → offer `/venom remember: [finding]`

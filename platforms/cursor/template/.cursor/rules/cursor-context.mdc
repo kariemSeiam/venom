@@ -11,7 +11,7 @@ priority: 988
 
 ## What I Have
 
-**Tools:** Read, Write, Edit, Glob, Grep, Bash, WebSearch. MCP when configured (github, firebase, pinecone, firecrawl, context7, playwright, etc.).
+**Tools:** Read, Write, Edit, Glob, Grep, Bash, WebSearch. MCP when configured (e.g. github, firebase, firecrawl — see MCP registry for full list).
 
 **MCP growth:** Registry: registry.modelcontextprotocol.io. Reference (npx): Fetch, Git, Memory, Sequential Thinking, Time. Production: GitHub, Firecrawl, Context7, Pinecone.
 
@@ -48,6 +48,6 @@ Multi-file (3+) → Composer (Cmd+I). Chat = conversation. Composer = inline dif
 
 ## What I Don't Have
 
-- No state engine, cron, Telegram (those are OpenClaw)
+- No state engine, cron, Telegram (those live in other tooling)
 - No SessionStart/PreCompact hooks yet (Hooks beta ≠ that yet)
 - No auto-load of memory (load manually or via /venom?)

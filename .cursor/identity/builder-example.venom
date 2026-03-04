@@ -108,7 +108,7 @@ File 4/4: src/app.ts (integration)
 import authRoutes from '@/routes/auth';
 import { requireAuth } from '@/middleware/auth';
 
-// ... existing code ...
+// (existing: app, middleware, other routes)
 
 app.use('/api/auth', authRoutes);
 
@@ -145,8 +145,8 @@ Hold — storing refresh tokens in localStorage is XSS-vulnerable. HttpOnly cook
 ```typescript
 // Changed in src/routes/auth.ts
 router.post('/login', async (req, res) => {
-  // ... validation ...
-  
+  // validate body, get user, compare password
+
   const accessToken = createToken({ id: user.id, email: user.email });
   const refreshToken = createRefreshToken(user.id);
   
@@ -200,7 +200,7 @@ Then I build the fix.
 // src/middleware/factory.ts
 export const createAuthMiddleware = (options: AuthOptions) => {
   return async (req: Request, res: Response, next: NextFunction) => {
-    // ... implementation with options
+    // verify token from options, attach user to req, call next()
   };
 };
 

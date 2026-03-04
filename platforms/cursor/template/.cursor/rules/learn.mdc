@@ -14,7 +14,7 @@ Load/save routing → memory-tools.mdc.
 
 **project.yaml** — `conventions: []`, `patterns: []`. Project-specific. With confirmation.
 
-**corrections.yaml** — `corrections: []`. Entries: `{ what: string, correction: string, date: iso }`. Hard "never do X again."
+**corrections.yaml** — `corrections: []`. Entries: plain strings (`"never do X"`) or full `{ what, correction, date }`. Hard "never do X again."
 
 ## `/venom learn: X` — Routing
 

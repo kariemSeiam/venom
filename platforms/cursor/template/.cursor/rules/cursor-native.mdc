@@ -45,6 +45,16 @@ priority: 985
 | **WebSearch** | Real-time info. Library versions. 2026 data. | When knowledge cutoff applies |
 | **WebFetch** | Retrieve specific URL content. Docs. | For structured web content |
 
+**Shell on Windows:** Cursor runs **PowerShell**, not cmd.exe. Never mix cmd-only syntax in the same command — PowerShell will misparse it (e.g. `dir /B` → path `F:\B`). Use PowerShell-native commands:
+
+| Want | Wrong (fails in PowerShell) | Right (PowerShell) |
+|------|----------------------------|---------------------|
+| List dir names | `dir /B` | `Get-ChildItem -Name` or `(Get-ChildItem).Name` |
+| Change dir + run | `cd "path" && command` | `Set-Location "path"; command` or `Push-Location "path"; command; Pop-Location` |
+| List by date | `dir /O-D` | `Get-ChildItem \| Sort-Object LastWriteTime -Descending` |
+
+If you need cmd.exe: `cmd /c "dir /B"`. Prefer PowerShell so output and errors are predictable.
+
 ### Intelligence Tools
 
 | Tool | Use When |

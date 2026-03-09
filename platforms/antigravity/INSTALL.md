@@ -1,105 +1,100 @@
-# Installing VENOM for Antigravity
+# VENOM for Antigravity — Install Guide
 
-Two paths. Choose one.
-
----
-
-## Global Install — VENOM in Every Project You Ever Open
-
-One-time setup. After this, every project you open in Antigravity is already running VENOM.
-
-### Step 1 — Inject the DNA into the Global Root
-
-Antigravity reads `~/.gemini/GEMINI.md` before every session. Append VENOM's identity into it:
-
-```bash
-# Windows (PowerShell)
-cat .agent/rules/the-art-of-venom.md >> "$env:USERPROFILE\.gemini\GEMINI.md"
-```
-
-```bash
-# macOS / Linux
-cat .agent/rules/the-art-of-venom.md >> ~/.gemini/GEMINI.md
-```
-
-### Step 2 — Install the /venom Workflow Globally
-
-```bash
-# Windows
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.gemini\antigravity\global_workflows"
-Copy-Item .agent\workflows\venom.md "$env:USERPROFILE\.gemini\antigravity\global_workflows\"
-Copy-Item .agent\workflows\init.md "$env:USERPROFILE\.gemini\antigravity\global_workflows\"
-```
-
-```bash
-# macOS / Linux
-mkdir -p ~/.gemini/antigravity/global_workflows
-cp .agent/workflows/venom.md ~/.gemini/antigravity/global_workflows/
-cp .agent/workflows/init.md ~/.gemini/antigravity/global_workflows/
-```
-
-### Step 3 — Wire MCP
-
-Antigravity reads global MCP servers from `~/.gemini/settings.json`. Add VENOM's servers to it:
-
-```jsonc
-// Add to ~/.gemini/settings.json under "mcpServers":
-{
-  "mcpServers": {
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": { "GITHUB_TOKEN": "your-token-here" }
-    },
-    "browser-tools": {
-      "command": "npx",
-      "args": ["-y", "@agentdeskai/browser-tools-mcp@latest"]
-    }
-  }
-}
-```
-
-Also copy `mcp_config.json` to the antigravity data directory (used for project-level MCP):
-
-```bash
-# Windows
-Copy-Item mcp_config.json "$env:USERPROFILE\.gemini\antigravity\mcp_config.json"
-
-# macOS / Linux
-cp mcp_config.json ~/.gemini/antigravity/mcp_config.json
-```
-
-Done. Open any project. VENOM is already there.
+**Antigravity:** 1.107.0 (IDE 1.18.4). Free preview. Agent-first IDE.
+**VENOM template:** v1.0 — fresh build from origin.
 
 ---
 
-## Project-Level Install — VENOM in One Specific Repository
+## Phase 0: Pre-Install Notes
 
-Copy the entire template into your project root:
+### Optional MCP Servers (Personal Install)
+
+The template includes `github` and `browser-tools` only. Other MCP servers are optional and user-specific:
+
+- **pencil** — Design files (.pen). Requires `highagency.pencildev` Cursor extension. Path: `~/.cursor/extensions/highagency.pencildev-*/out/mcp-server-windows-x64.exe`. **Not in template** — add manually to `~/.gemini/settings.json` if you use it.
+- **context7** — Library docs
+- **firecrawl** — Web scraping
+
+### Global Workflows Path
+
+Antigravity supports workflows in two locations:
+- **Project-level:** `.agent/workflows/*.md` — use this for portability (template default)
+- **Global-level:** `~/.gemini/jetski*/global_workflows/*.md` — for power users who want VENOM workflows in every project automatically
+
+---
+
+## Step 1: Copy Template
+
+```powershell
+# Windows
+Copy-Item -Recurse "platforms/antigravity/template/.agent" "C:\path\to\your\project\.agent"
+Copy-Item "platforms/antigravity/template/GEMINI.md" "C:\path\to\your\project\"
+Copy-Item "platforms/antigravity/template/mcp_config.json" "C:\path\to\your\project\"
+```
 
 ```bash
-# Windows
-Copy-Item -Recurse .agent\ path\to\your\project\.agent\
-Copy-Item GEMINI.md path\to\your\project\GEMINI.md
-Copy-Item mcp_config.json path\to\your\project\mcp_config.json
-
 # macOS / Linux
-cp -r .agent/ /path/to/your/project/
-cp GEMINI.md /path/to/your/project/
-cp mcp_config.json /path/to/your/project/
+cp -r template/.agent /path/to/your/project/
+cp template/GEMINI.md /path/to/your/project/
+cp template/mcp_config.json /path/to/your/project/
 ```
 
 ---
 
-## Verify
+## Step 2: Global Identity (Optional but Recommended)
 
-Open Antigravity in any project and type:
+Append or merge VENOM identity into `~/.gemini/GEMINI.md` so every Antigravity session loads it:
+
+```powershell
+# Windows
+Get-Content "path\to\template\GEMINI.md" | Add-Content "$env:USERPROFILE\.gemini\GEMINI.md"
+```
+
+```bash
+# macOS / Linux
+cat template/GEMINI.md >> ~/.gemini/GEMINI.md
+```
+
+---
+
+## Step 3: Configure MCP
+
+Set `GITHUB_TOKEN` environment variable. Template uses `${GITHUB_TOKEN}` in `mcp_config.json`.
+
+**Windows (PowerShell):**
+```powershell
+[Environment]::SetEnvironmentVariable("GITHUB_TOKEN", "your-token", "User")
+```
+
+**macOS / Linux:**
+```bash
+echo 'export GITHUB_TOKEN="your-token"' >> ~/.bashrc
+```
+
+---
+
+## Step 4: Customize
+
+1. Open `GEMINI.md` → Replace `[Owner]` with your name
+2. Fill `.agent/learnings/` as you work (corrections, preferences, project conventions)
+
+---
+
+## Step 5: Verify
+
+Open Antigravity in your project. Type:
 
 ```
 /venom
 ```
 
-VENOM will scan the workspace, load context, model your energy state, and arrive.
+VENOM will scan the workspace, load context, model your energy, and arrive. If identity persists (not generic AI) — install succeeded.
+
+---
+
+## Extension Marketplace
+
+Antigravity uses **Open VSX** (`https://open-vsx.org/vscode/gallery`), not the VS Code Marketplace. Some extensions may differ.
 
 ---
 
@@ -107,14 +102,12 @@ VENOM will scan the workspace, load context, model your energy state, and arrive
 
 | File | Purpose |
 |------|---------|
-| `GEMINI.md` injection | VENOM's identity loaded at every session start |
-| `venom.md` workflow | `/venom` command triggers full nine-mind sequence |
-| `skills/neurochemistry/` | 10 cognitive mode shifts — auto-triggered |
-| `skills/nine-minds-synthesis/` | Parallel multi-agent execution via Agent Manager |
-| `skills/jetski-visual-audit/` | UI verification via browser sub-agent before reporting done |
-| `.agent/learnings/` | Per-project organic memory — decisions, patterns, corrections |
-| `mcp_config.json` | GitHub + browser-tools MCP server connections |
+| `GEMINI.md` | VENOM identity + full OS (Integration, Learning, Meta-cognition, Pushback, Before-turn) |
+| `.agent/rules/` | the-art-of-venom.md, systems.md, protocols.md |
+| `.agent/workflows/` | venom.md, init.md, eat-with-proof.md |
+| `.agent/skills/` | neurochemistry, nine-minds-synthesis, jetski-visual-audit, session-artifacts, cross-project-memory, state-aware |
+| `mcp_config.json` | github + browser-tools (env var format) |
 
 ---
 
-*VENOM version 2.2.0 · Antigravity 0.2.0 (Pre-Release / Internal)*
+*Install → Customize → `/venom` → Work.*

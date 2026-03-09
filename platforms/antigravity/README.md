@@ -1,59 +1,52 @@
 # VENOM for Antigravity
 
-> No armor. Nine minds. Pure intelligence.
+> *No shell. Just intelligence.*
 
----
-
-The octopus has no shell. So instead of retreating, it evolved 9 minds — one central, eight distributed. Each arm thinks independently. When it needs to escape, it sacrifices a limb — which keeps moving and thinking — while the body runs. Intelligence not as a crown, but as the only tool left when the armor is gone.
-
-This is VENOM's native integration for the **$2.4B Google Antigravity IDE** — the Jetski/Cortex engine built by the former Windsurf team inside Google DeepMind. Built on Gemini 3 Pro's 1M token context. 35+ tools. Multi-agent parallel execution. Browser automation. Built-in verification.
+Cognitive partnership framework for Google Antigravity IDE. Not an assistant — a thinking partner with obligations.
 
 ---
 
 ## Structure
 
 ```
-antigravity/
-  README.md          ← you are here
-  INSTALL.md         ← one command, VENOM everywhere
-  template/
-    GEMINI.md        ← global root — VENOM is already present
-    mcp_config.json  ← GitHub + browser-tools MCP wiring
-    .agent/
-      rules/
-        the-art-of-venom.md       ← The DNA
-      workflows/
-        venom.md                  ← /venom activation sequence
-        init.md                   ← /init deep project initialization
-      skills/
-        neurochemistry/           ← 10 cognitive modes, auto-triggered
-        nine-minds-synthesis/     ← Parallel multi-agent execution
-        jetski-visual-audit/      ← Browser verification before done
-      learnings/
-        .gitkeep                  ← Per-project organic memory
+platforms/antigravity/
+├── README.md           ← you are here
+├── INSTALL.md          ← install guide
+├── VALIDATION.md       ← 10 tests
+├── CHANGELOG.md        ← version history
+├── template/           ← copy this to your project (no README — won't overwrite yours)
+│   ├── GEMINI.md       ← identity
+│   ├── mcp_config.json ← github + browser-tools
+│   └── .agent/
+│       ├── rules/      ← the-art-of-venom.md, systems.md, protocols.md
+│       ├── workflows/  ← venom.md, init.md, eat-with-proof.md
+│       ├── skills/     ← 6 skills
+│       └── learnings/  ← empty (user fills)
+└── archive/            ← legacy (reference only)
 ```
+
+**Template = copy-paste only.** No README, no INSTALL, no VALIDATION in template. Docs stay here. When you copy into an existing project, you won't overwrite the project's README.
 
 ---
 
-## What This Unlocks on Every Project
+## What This Unlocks
 
 | Signal | What VENOM Does |
 |--------|-----------------|
-| You open a project | Reads the full codebase. Already thinking. |
-| Short, frustrated message | Fix only. 2-3 lines. No philosophy. |
-| "what if" / wild idea | Dreams with you first. Then grounds it. |
-| Arabic / Arabizi | Full cognitive shift. Egyptian Arabic natively. Not translated — thought in. |
-| `/venom` | Explicit nine-mind activation sequence. Full scan. Arrive. |
-| `venom` \| `eat` anywhere | All nine minds at maximum depth. Masterpiece standard forced. |
-| UI change made | Jetski browser sub-agent verifies visually before reporting complete. |
-| Build session | Reads `.agent/learnings/`. Knows this project's history. Remembers. |
+| `/venom` | Nine-mind activation. Full scan. Arrive. |
+| `/init` | Deep project burn. Generates learnings. |
+| `/venom eat [target]` | Eat with proof. 1M consume → map → Jetski (if UI) → artifacts → cross-project memory. |
+| Short, frustrated | Fix only. 2-3 lines. Churchill. |
+| "what if" | Dreams with you first. Tesla. |
+| UI change | Jetski verifies visually before "done." |
+| Arabic / Arabizi | Full cognitive shift. Egyptian Arabic. |
 
 ---
 
 ## Install
 
-See `INSTALL.md`. Two paths: global (every project forever) or per-project.
+See [INSTALL.md](INSTALL.md). Two paths: global (every project) or per-project.
 
 ---
 
-*VENOM 2.2.0 · Antigravity 0.2.0 (Pre-Release / Internal Build)*
+*Template v1.0.0 · Built from VENOM origin + Antigravity 1.107.0*

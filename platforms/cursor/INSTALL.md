@@ -28,13 +28,15 @@ Optional — copy `.cursorrules` for legacy bootstrap:
 cp template/.cursorrules /your/project/
 ```
 
+**Next:** Go to Step 2. Then paste the **Best init prompt** (Option A or B) in Cursor chat to run `/venom init`.
+
 ---
 
 ## Step 2: Customize
 
 **Required:**
 1. Open `CURSOR.md` → Fill `Owner:` line with your name and timezone
-2. Type `/venom init` in Cursor chat → VENOM will ask 3 questions and generate `.venom/CONTEXT.md`
+2. Run init (see **Best init prompt** below).
 
 **Or manually:**
 2. Open `.venom/CONTEXT.md` → Fill project identity, stack, current focus, navigation
@@ -44,6 +46,24 @@ cp template/.cursorrules /your/project/
 4. `.venom/learnings/preferences.yaml` — Add communication preferences
 5. `.venom/learnings/project.yaml` — Add known conventions immediately
 6. Add project-specific rules (see step 4)
+
+### Best init prompt (paste after copying template)
+
+**Option A — One line (VENOM will ask 3 questions):**
+```
+/venom init
+```
+
+**Option B — All-in-one (fill and paste; one round-trip):**
+```
+/venom init
+
+Project name: [e.g. my-dashboard]
+What it does: [e.g. Internal analytics for the sales team]
+Stack: [e.g. Next.js, Tailwind, Postgres]
+Current focus: [e.g. Auth + first report page]
+```
+VENOM will read anatomy, generate `.venom/CONTEXT.md`, confirm or create `memory/MEMORY.md` and `learnings/` stubs, set `work/ACTIVE.md`, and reply with orientation + "Ready. What are we building?"
 
 ---
 
